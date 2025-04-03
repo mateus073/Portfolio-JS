@@ -61,6 +61,7 @@ e tamanho das fontes */
 
 /* cabecalho / menu */
 .hCabecalho {
+    z-index: 100;
     height: 100px;
     width: 100%;
     display: flex;
@@ -450,354 +451,246 @@ td {
     padding: 2rem;
 }
 
+/* COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- */
 
-
-/* div principal que contem os dois lados  */
-#projetosConteudo {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-
-/* lado esquerdo que contem todos os projetos */
-.Qprojetos {
+/* div pai dos projetoss */
+.projetosDiv {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex: 2.0;
-    gap: 1.5rem;
-    padding: 1rem;
-}
-
-/* instrucoes pra passar o mouse em projetos */
-.h3esp {
-    width: 100%;
-    font-size: var(--font-m);
-    font-family: var(--font-titulo);
-    color: var(--texto-principal);
-    text-align: center;
-}
-
-
-/* divs que armazena os figure e os figcaption com os artigos */
-.DimgProj {
-    height: 13rem;
-    width: 20rem;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    border-radius: 5px;
-}
-
-
-/* imgs dos projetos*/
-.DimgProj img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.DimgProj:hover {
-    transform: scale(1.1);
-
-}
-
-
-
-/* comeco do figure que armazena as imgs e a legenda(span) */
-
-/* figure dos projetos "em breve" */
-.figuProje {
-    background-image: url('../img/loading.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
-    box-shadow: 3px 3px 6px var(--preto);
+    gap: 3rem;
+    margin: 2rem auto;
 }
 
-.figuProje1 {
-    background-image: url('../img/calculadoraIMC.png');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-    box-shadow: 3px 3px 6px var(--preto);
-}
-
-.figuProje2 {
-    background-image: url('../img/lista-tarefas.png');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 3px 3px 6px var(--preto);
-}
-
-.figuProje3 {
-    background-image: url('../img/filmes-torrent.png');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 3px 3px 6px var(--preto);
-}
-
-.figuProje4 {
-    background-image: url('../img/lanpada.png');
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 3px 3px 6px black;
-}
-
-/* fim dos figure que contem as imgs e span (legenda dos projetos) */
-
-/* span com a legenda dos projetos*/
-.legendaFoto {
-    text-decoration: none;
-    color: var(--texto-principal);
-    font-family: var(--font-texto);
-    font-size: var(--font-p);
-    background-color: rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
-    text-align: center;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-
-.legendaFoto:hover {
-    opacity: 1;
-    box-shadow: 3px 3px 6px var(--preto);
-}
-
-/* fim dos span de legenda dos projetos */
-
-
-/* botao que exibe mais projetos*/
-.bMais {
-    width: 100%;
-    text-align: center;
-}
-
-.bVer {
-    padding: 12px;
-    border: solid 2px var(--destaque);
-    background-color: rgba(50, 58, 66, 0.3);
-    box-shadow: 2px 2px 4px var(--preto);
+/* div do card */
+.cardProjeto {
+    color: white;
+    width: 420px;
+    height: 250px;
     border-radius: 10px;
-    font-family: var(--font-texto);
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+/* efieto de card ao passar o mouse */
+.cardProjeto:hover {
+    z-index: 10;
+    transform: scale(1.2);
+    box-shadow: 2px 2px 2px var(--fundo-pricipal);
+}
+
+/* efeito de sumir o texto da frente da img e a div overlay */
+.cardProjeto:hover .OverlayProjeto,
+.cardProjeto:hover .divTitulocard {
+    opacity: 0;
+}
+
+
+/* img do card */
+.imgProjeto {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: solid 3px var(--destaque);
+}
+
+/* div que contem os icones de tec usadas e o titulo  */
+.divTitulocard {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    font-family: var(--font-titulo2);
     font-size: var(--font-p);
+    transition: all 0.5s ease;
+}
+
+.divTitulocard img {
+    width: 20px;
+    height: 20px;
+    margin: 5px
+}
+
+.OverlayProjeto {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+/* div que aparece e some com o hover na div projeto */
+.divBtnModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--suporte);
+    padding: 0 16px;
+    height: 0;
+    overflow: hidden; 
+    transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Quando o elemento pai (ex.: .cardProjeto) estiver em hover, o .divBtnModal é exibido */
+.cardProjeto:hover .divBtnModal {
+    height: 45px;
+    padding: 0px 16px;
+}
+
+.divBtnModal .pStatus {
     color: var(--texto-principal);
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    font-weight: bold;
+}
+
+.divBtnModal .btnProjeto {
+    cursor: pointer;
+    color: var(--texto-principal);
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    background-color: var(--destaque);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    font-weight: bold;
+    z-index: 22;
+}
+
+
+
+
+/* css do modal de especificações do projeto */
+ .modalEspc::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+
+dialog {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 16px;
+    width: 80%;
+}
+
+.modalEspcProjeto {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--fundo-pricipal);
+    border: none;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+/* btn fecha modal */
+.btnCloseModal {
+    background-image: url("../img/btn-fechar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.divVideo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.divVideo video {
+    width: 600px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.divVideo .btnsVideo {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+.divVideo .btnsVideo button {
+    color: var(--texto-principal);
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    background-color: var(--destaque);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
     font-weight: bold;
     cursor: pointer;
-    text-transform: uppercase;
 }
 
-.bVer:hover {
-    opacity: 0.8;
-    box-shadow: 1px 1px 3px black;
-}
-
-/* fim do botao ver mais */
 
 
-/* comeco da div dos projetos do ver mais */
-.verMais {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex: 2.5;
+
+.divEspecificacoes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-}
-
-/* js que ira exibir o restante dos projetos */
-.exbP {
-    display: flex;
-}
-
-/* paragrafos com especificacoes que aparecem em especificaçoes */
-.figcLegenda {
-    display: none;
-}
-
-/* js que exibe os artigos em especificaçoes */
-.exibeArt {
-    display: flex;
-}
-
-
-/* fim do lado esquedo de meus projetos */
-
-
-
-
-/*comeco do lado direito que contem as especificacoes  */
-
-/* div principal do lado direito(especificaçoes) */
-#espProjetos {
-    max-height: 770px;
-    display: flex;
-    flex-direction: column;
-    border: solid 1px var(--destaque);
-    padding: 1rem;
-    margin-right: 1rem;
-    flex: 1.0;
-    border-radius: 10px;
-}
-
-
-/* titulo da div do lado direto(especificacoes) */
-.hEsp {
-    text-align: center;
-    font-size: var(--font-m);
-    font-family: var(--font-texto);
     color: var(--texto-principal);
-    border-bottom: solid 1px var(--destaque);
 }
-
-
-/*  comeco dos artigo com as especificacoes do projeto */
-.pEmDev {
-    display: none;
+.divEspecificacoes .art {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    color: var(--texto-principal);
     font-family: var(--font-texto);
-    font-size: var(--font-p);
-    padding: 0.5rem;
-    border-width: 0px;
-    min-height: 400px;
 }
 
-.pEmDev.jsPEmDev {
-    display: flex;
-}
-
-.textoEsp,
-.artIMC,
-.artTarefas,
-.artFilmes,
-.artLanp,
-.pmsg {
+.art section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    color: var(--texto-principal);
-    font-family: var(--font-texto);
+    align-items: flex-start;
+}
+
+.art .headerProj {
     font-size: var(--font-p);
-    padding: 0.5rem;
-    border-width: 0px;
-    min-height: 400px;
+    color: var(--destaque);
 }
-
-.textoEsp h2,
-.artIMC h2,
-.artTarefas h2,
-.artFilmes h2,
-.artLanp h2 {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 5px auto;
-    color: var(--texto-principal);
-}
-
-.textoEsp h3,
-.artIMC h3,
-.artTarefas h3,
-.artFilmes h3,
-.artLanp h3 {
+.art h3 {
+    margin-bottom: 6px;
     font-size: var(--font-p);
-    text-align: center;
-    margin-bottom: 5px;
-    color: var(--texto-principal);
+    font-weight: bold;
 }
-
-.textoEsp p,
-.artIMC p,
-.artTarefas p,
-.artFilmes p,
-.artLanp p {
-    color: var(--texto-secundario);
-    text-indent: 20px;
-    text-align: justify;
-    font-size: var(--font-pp);
+ul {
+    padding-left: 20px;
 }
+ul li {
+    font-size:var(--font-pp);
+    line-height: 1.6;
+    text-align: left;
 
-.textoEsp li,
-.artIMC li,
-.artTarefas li,
-.artFilmes li,
-.artLanp li {
-    list-style: inside;
-    margin-bottom: 5px;
-    font-size: var(--font-pp);
+    color: #555;
 }
-
-/* fim dos artigos de especificacoes de projetos */
-
-
-
-
-/* paragrafo "passe o curso e veja especificaçoes" */
-#pr {
-    margin-top: 30px;
+p {
+    font-size:var(--font-pp);
+    line-height: 1.6;
+    text-align: left;
+    color: #555;
 }
-
-/* começo dos botoes do repositorio e do site */
-.bEsp {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.bEsp button {
-    font-family: var(--font-texto);
-    font-size: var(--font-p);
-    color: var(--texto-principal);
-    background-color: rgb(231, 238, 238, 0.1);
-    padding: 12px;
-    border: solid 1px var(--destaque);
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px var(--texto-secundario);
-    cursor: pointer;
-}
-
-.bEsp button:hover {
-    opacity: 0.8;
-    box-shadow: 1px 1px 3px black;
-}
-
-/* final da div direta(especificacoes) da secao projetos */
-
-
-
 
 /* FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- /
 

@@ -71,7 +71,7 @@ function corLink() {
     let socialClass = this.getAttribute('class')  // atribui as class dos elementos do loop pra uma variavel 
 
     // condicionais que virificam a class dos elementos e adiciona classes especificas pra cada um
-    if(socialClass.includes('git')) {
+    if (socialClass.includes('git')) {
         this.classList.add('jsGit')
     } else if (socialClass.includes('linkedin')) {
         this.classList.add('jsLkd')
@@ -89,93 +89,91 @@ function corLink() {
 
 
 
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 
-// Seleção dos elementos principais// Seleciona os elementos necessários
-let esp = document.getElementById('esp-js'); // Div que exibe especificações de projetos
-let divs = document.querySelectorAll('.DimgProj'); // Divs pai que contêm os projetos e os os span
-let p = document.getElementById('pr'); // Parágrafo presente em especificações (fallback)
-
-// objeto que contem os artigos dos projetos que foram selecionado pelo id
-let artigos = {
-    sClc: document.getElementById('artjs'),  // Artigo "Calculadora"
-    sLt: document.getElementById('artLt'),   // Artigo "Lista de Tarefas"
-    sFlm: document.getElementById('artFlm'), // Artigo "Filmes e Séries"
-    sLpd: document.getElementById('artLpd')  // Artigo "Lâmpada"
-};
-
-
-
-
-// Função para remover o conteúdo anterior de 'esp' e adicionar o novo artigo
-function addArt(id) {
-    if (p) {
-        p.remove(); // Remove o parágrafo de instruções, se existir
-    }
-    
-    // Remove o primeiro elemento de 'esp', se existir
-    let primeiroElemento = esp.firstElementChild;
-    if (primeiroElemento) {
-        esp.removeChild(primeiroElemento);
-    }
-    
-    // Adiciona o artigo correspondente com base no ID do span
-    let artigo = artigos[id];
-    if (artigo) {
-        esp.appendChild(artigo);  // Adiciona o artigo à div de especificações
-        artigo.classList.add('exibeArt'); // Adiciona a classe que exibe o artigo
-    }
-    else {
-        esp.appendChild(p)
-    }
-}
-
-
-
-
-// Loop pelas divs dos projetos e adição de evento 'mouseover' nos spans
-divs.forEach(div => {
-    let spanP = div.querySelector('span'); // Seleciona o span (título do projeto)
-    
-    // Verifica se o span existe antes de adicionar o evento
-    if (spanP) {
-        spanP.addEventListener('mouseover', () => addArt(spanP.id));
-    }
-});
-
-/*aprende a usar funcao anonima, como a funcao precisa do span, que ta dentro do loop eu crio uma funcao anonima no loop que chama a funcao externa e passa os parametros que ela iria precisar */
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+// codigo dos projetos
 
-// comeco do js responsavel por exibir e deixar de exibir o restante dos projetos que estao ocultos com display none
-let dvVerMais = document.getElementById('vverMais') //div que contem o restante dos projetos 
-let btVM = document.getElementById('bbver') //botao "ver mais" que ira mostrar ou ocultar o restante dos projetos
 
-//funcao que da a class que contem o display flex e exibe os projetos
-function verMais() {
-    dvVerMais.classList.add('exbP') 
-}
+import {dataProjetos} from './dataProjetos.js'
 
-//funcao que remove a class que contem o display flex e oculta novamente os projetos
-function verMenos() {
-    dvVerMais.classList.remove('exbP') 
-}
+function criarCardProjeto(projetos) {
+    const DivProjetos = document.querySelector('.projetosDiv')
+    
+    for (let x in projetos) {
+        const divProjeto  = document.createElement('div')
+        divProjeto.classList.add('cardProjeto')
+    
+        const imgProjeto = document.createElement('img')
+        imgProjeto.classList.add('imgProjeto')
+        imgProjeto.src = projetos[x].dataPost.imagem
+    
+        const divOverlay = document.createElement('div')
+        divOverlay.classList.add('OverlayProjeto')
+    
+        const tituloProjeto = document.createElement('h2')
+        tituloProjeto.classList.add('tituloProjeto')
+        tituloProjeto.textContent = projetos[x].dataPost.titulo
+        
+        const tecUsadas = document.createElement('div')
+        tecUsadas.classList.add('tecUsadas')
+        projetos[x].dataPost.tecLogo.forEach(tec => {
+            const imgTecUsada = document.createElement('img')
+            imgTecUsada.classList.add('imgTecUsada')
+            imgTecUsada.src = tec
 
-// funcao responsavel por mudar o texto do botao 
-function verProjetos() {
-    if(!dvVerMais.classList.contains('exbP')) {
-        verMais()
-        btVM.textContent = 'Ver Menos'
-    } else{
-        verMenos()
-        btVM.textContent = 'Ver Mais'
+            tecUsadas.append(imgTecUsada)
+        })
+        
+        const divTitulocard = document.createElement('div')
+        divTitulocard.classList.add('divTitulocard')
+        divTitulocard.append(tituloProjeto, tecUsadas)
+    
+
+        const pStatus = document.createElement('p')
+        pStatus.classList.add('pStatus')
+        projetos[x].dataPost.status ? pStatus.textContent = 'Concluido' : pStatus.textContent = 'Em desenvolvimento'
+
+        const btnProjeto = document.createElement('button')
+        btnProjeto.textContent = 'VER PROJETO'
+        btnProjeto.classList.add('btnProjeto')
+        btnProjeto.setAttribute('data-name', `${projetos[x].dataPost.id}`)
+        btnProjeto.addEventListener('click', (e) => OpenModal(e))
+        
+        const divBtnModal = document.createElement('div')
+        divBtnModal.classList.add('divBtnModal')
+        divBtnModal.append(pStatus, btnProjeto)
+    
+        // Adiciona os elementos ao card
+        divProjeto.append(imgProjeto, divTitulocard, divOverlay, divBtnModal)
+    
+        // Insere o card no container principal
+        DivProjetos.appendChild(divProjeto)
+    
+        // console.log(projetos[x].dataPost.titulo)
     }
 }
+criarCardProjeto(dataProjetos)
 
-btVM.addEventListener('click', verProjetos)
 
+// codigo de arbrir modal e preenchelo
+
+
+function OpenModal(e) {
+    const modal = document.querySelector('#modalEspc')
+    modal.showModal()
+    
+    const id = e.target.getAttribute('data-name')
+    console.log(id)
+}
+
+function closeModal() {
+    const modal = document.querySelector('#modalEspc')
+    modal.close()
+}
+document.querySelector('.btnCloseModal').addEventListener('click', closeModal)
 
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -187,15 +185,15 @@ let menu = document.getElementById('menuMob')
 let fecha = document.getElementById('btFechar')
 let overlay = document.getElementById('overlay')
 
-abri.addEventListener('click', ()=>{
+abri.addEventListener('click', () => {
     menu.classList.add('abrirMenu')
 })
 
-fecha.addEventListener('click', ()=>{
+fecha.addEventListener('click', () => {
     menu.classList.remove('abrirMenu')
 })
 
-overlay.addEventListener('click', ()=>{
+overlay.addEventListener('click', () => {
     menu.classList.remove('abrirMenu')
 })
 
