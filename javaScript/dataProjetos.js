@@ -1,7 +1,7 @@
 export const dataProjetos = [
     {
         dataPost: {
-            imagem: '../img/projetos/img-bank.png',
+            imagem: 'img/projetos/img-bank.PNG',
             id: 1,
             titulo: 'Banco Ficticio',
             status: false,
