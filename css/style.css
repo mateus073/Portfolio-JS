@@ -54,7 +54,7 @@ e tamanho das fontes */
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../img/fundojs.jpg');
+    background-image: url('../img/fundo-gg.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -107,6 +107,7 @@ e tamanho das fontes */
 .aLink {
     text-decoration: none;
     font-size: 1.2rem;
+    font-weight: 700;
     color: var(--branco);
     transition: all 0.5s ease;
 }
@@ -247,13 +248,15 @@ e tamanho das fontes */
 #home2 h2 {
     font-family: var(--font-titulo);
     color: var(--texto-principal);
+    font-weight: bold;
     font-size: var(--font-g);
 }
 
 #home2 h3 {
     font-size: var(--font-m);
-    color: var(--texto-secundario);
+    color: var(--texto-principal);
     font-family: var(--font-texto);
+    font-weight: bold;
 }
 
 /* fim dos textos que ficam abaixo das fotos */
@@ -536,7 +539,7 @@ td {
     background-color: var(--suporte);
     padding: 0 16px;
     height: 0;
-    overflow: hidden; 
+    overflow: hidden;
     transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
@@ -570,9 +573,9 @@ td {
 
 
 /* css do modal de especificações do projeto */
- .modalEspc::backdrop {
+.modalEspc::backdrop {
     background-color: rgba(0, 0, 0, 0.8);
-} 
+}
 
 dialog {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -580,6 +583,7 @@ dialog {
     position: fixed;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 16px;
@@ -589,12 +593,14 @@ dialog {
 .modalEspcProjeto {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: var(--fundo-pricipal);
     border: none;
     justify-content: center;
     padding: 2rem;
     gap: 2rem;
     width: 100%;
+    min-height: 500px;
 }
 
 
@@ -610,8 +616,8 @@ dialog {
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 16px;
-    right: 16px
+    top: 12px;
+    right: 12px
 }
 
 .divVideo {
@@ -625,11 +631,13 @@ dialog {
     cursor: pointer;
     margin-bottom: 16px;
 }
+
 .divVideo .btnsVideo {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     gap: 2rem;
 }
+
 .divVideo .btnsVideo button {
     color: var(--texto-principal);
     font-size: var(--font-pp);
@@ -647,11 +655,13 @@ dialog {
 
 .divEspecificacoes {
     flex: 1;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     color: var(--texto-principal);
 }
+
 .divEspecificacoes .art {
     display: flex;
     flex-direction: column;
@@ -670,25 +680,29 @@ dialog {
     font-size: var(--font-p);
     color: var(--destaque);
 }
+
 .art h3 {
     margin-bottom: 6px;
     font-size: var(--font-p);
     font-weight: bold;
 }
+
 ul {
     padding-left: 20px;
 }
+
 ul li {
-    font-size:var(--font-pp);
+    font-size: var(--font-pp);
     line-height: 1.6;
     text-align: left;
 
     color: #555;
 }
+
 p {
-    font-size:var(--font-pp);
+    font-size: var(--font-pp);
     line-height: 1.6;
-    text-align: left;
+    text-align: center;
     color: #555;
 }
 
@@ -714,28 +728,28 @@ p {
     font-family: var(--font-titulo);
     color: var(--texto-principal);
     text-transform: uppercase;
-    border-bottom: solid 3px var(--destaque);
+    border-top: solid 3px var(--destaque);
     margin: auto 20px;
 }
 
 
 /* titulo de tecnologias dominadas */
 .h3Tec {
-    margin-top: 2rem;
+    margin: 1rem auto;
     text-align: center;
     width: 100%;
     font-size: var(--font-m);
     font-family: var(--font-titulo);
-    color: var(--texto-principal);
+    color: var(--texto-secundario);
 }
 
 /* section de tec que contem as divs com img e os p */
 .divTec2 {
-    gap: 1rem;
-    padding: 3rem;
+    /* gap: 1rem; */
+    /* padding: 3rem; */
     display: flex;
     justify-content: space-evenly;
-    margin: auto 1rem;
+    margin: 4rem auto;
     flex-wrap: wrap;
 }
 
@@ -797,6 +811,27 @@ p {
     transform: scale(1.2);
     filter: drop-shadow(1px 1px 8px #F24949);
 }
+
+.divTec2:hover #dTS:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #494ff2);
+}
+
+.divTec2:hover #dtalwind:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #49eaf2);
+}
+
+.divTec2:hover #driact:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 8px #49a9f2);
+}
+
+
+
 
 /* fim das divs com img e p das tecnologias e dos efeios de hover nelas */
 
@@ -988,6 +1023,10 @@ p {
 /* COMECO DA 2° RESPONSIVIDADE -- COMECO DA 2° RESPONSIVIDADE -- COMECO DA 2° RESPONSIVIDADE -- COMECO DA 2° RESPONSIVIDADE -- */
 @media (min-width: 320px) and (max-width: 1060px) {
 
+    #home {
+        background-image: url('../img/fundo-p.jpg');
+    }
+
     :root {
         --font-g: 2rem;
         --font-m: 1rem;
@@ -1095,6 +1134,13 @@ p {
     /* div pai que contem o lado direito(projetos) e o lado esquerdo (especificaoes) */
     #divP {
         padding: 1rem;
+
+    }
+
+    .divVideo video {
+        margin-top: 10px;
+        min-width: 400px;
+        max-width: 100%;
     }
 
     /* fim da section de projetos */
@@ -1141,6 +1187,11 @@ p {
         align-items: center;
         justify-content: center;
         margin-left: 10px;
+    }
+
+    /* secao de home */
+    .logo h1 {
+        font-size: 12pt;
     }
 
     /* header */
@@ -1216,6 +1267,19 @@ p {
     .social1 {
         display: none;
     }
+
+    .cardProjeto {
+        width: 300px;
+        height: 180px;
+    }
+
+    .divVideo video {
+        margin-top: 10px;
+        min-width: 300px;
+        max-width: 100%;
+    }
+
+
 
     /* fim da section projetos */
 
