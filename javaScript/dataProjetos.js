@@ -27,7 +27,7 @@ export const dataProjetos = [
 
     {
         dataPost: {
-            imagem: '../img/projetos/img-quizEnglish.png',
+            imagem: 'img/projetos/img-quizEnglish.png',
             id: 2,
             titulo: 'Quiz English',
             status: true,
