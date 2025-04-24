@@ -143,7 +143,7 @@ export const dataProjetos = [
             ],
         },
         dataModal: {
-            video: 'img/projetos/video-teste.mp4',
+            video: 'img/projetos/video-formulario.mp4',
             titulo: 'Formulário de login',
             linkProjeto: 'https://www.google.com',
             linkGithub: 'https://www.google.com',
@@ -168,7 +168,7 @@ export const dataProjetos = [
             ],
         },
         dataModal: {
-            video: 'img/projetos/video-teste.mp4',
+            video: 'img/projetos/video-quadroCanva.mp4',
             titulo: 'Quadro Canva',
             linkProjeto: 'https://www.google.com',
             linkGithub: 'https://www.google.com',
