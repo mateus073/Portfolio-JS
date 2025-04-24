@@ -843,7 +843,7 @@ p {
     justify-content: center;
     padding: 20px;
     width: 100%;
-    border-bottom: solid 3px var(--destaque);
+    border-top: solid 3px var(--destaque);
 }
 
 .h4Extras {
@@ -869,74 +869,6 @@ p {
 /* fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas */
 
 /* comeco da secao de cursos */
-
-/* section pai do cursos */
-.sCursos {
-    padding: 3rem;
-    gap: 3rem;
-    border-radius: 10px;
-}
-
-.hcursos {
-    width: 100%;
-    text-align: center;
-    font-family: var(--font-titulo2);
-    font-size: var(--font-g);
-    color: var(--texto-principal);
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-
-
-/* artigos que contem os cursos */
-.aCursos {
-    display: flex;
-    gap: 4rem;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.aCursos section {
-    background-image: url('../img/fundoCertificado.png');
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    min-width: 300px;
-    border-radius: 5px;
-    padding: 1rem;
-    font-family: var(--font-texto);
-    font-size: var(--font-pp);
-    transition: all 0.3s ease-in;
-}
-
-.aCursos:hover section {
-    transform: scale(0.9);
-    filter: blur(2px);
-}
-
-.sCursos section:hover {
-    transform: scale(1.1);
-    box-shadow: 2px 2px 4px black;
-    filter: blur(0px);
-    box-shadow: 3px 3px 6px var(--preto);
-
-}
-
-.tituloCursos {
-    font-family: var(--font-titulo);
-    font-size: var(--font-p);
-    color: var(--texto-principal);
-    font-weight: bold;
-    padding-bottom: 0.5rem;
-}
-
-.aCursos section p {
-    margin-bottom: 5px;
-    font-family: var(--font-texto);
-    font-size: var(--font-pp);
-    color: var(--texto-principal);
-}
-
 
 
 /* FIM DA SECTION HABILIDADES / COMECO DO RODAPE -- FIM DA SECTION HABILIDADES / COMECO DO RODAPE -- FIM DA SECTION HABILIDADES / COMECO DO RODAPE --  */
