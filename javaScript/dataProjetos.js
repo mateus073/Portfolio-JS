@@ -1,14 +1,14 @@
 export const dataProjetos = [
     {
         dataPost: {
-            imagem: 'img/projetos/img-bank.PNG',
+            imagem: 'img/projetos/img-bank.png',
             id: 1,
             titulo: 'Banco Ficticio',
             status: false,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ]
         },
         dataModal: {
@@ -32,9 +32,9 @@ export const dataProjetos = [
             titulo: 'Quiz English',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
 
         },
@@ -54,14 +54,14 @@ export const dataProjetos = [
 
     {
         dataPost: {
-            imagem: '../img/projetos/img-jogoVelha.png',
+            imagem: 'img/projetos/img-jogoVelha.png',
             id: 3,
             titulo: 'Jogo da Velha',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -80,14 +80,14 @@ export const dataProjetos = [
 
     {
         dataPost: {
-            imagem: '../img/projetos/img-previsaoTempo.png',
+            imagem: 'img/projetos/img-previsaoTempo.png',
             id: 4,
             titulo: 'Previsão do Tempo',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -106,14 +106,14 @@ export const dataProjetos = [
 
     {
         dataPost: {
-            imagem: '../img/projetos/img-streetChaves.png',
+            imagem: 'img/projetos/img-streetChaves.png',
             id: 5,
             titulo: 'Street Chaves',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
 
@@ -132,14 +132,14 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: '../img/projetos/img-form.png',
+            imagem: 'img/projetos/img-form.png',
             id: 6,
             titulo: 'Formulário de login',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -157,14 +157,14 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: '../img/projetos/img-quadroCanva.png',
+            imagem: 'img/projetos/img-quadroCanva.png',
             id: 7,
             titulo: 'Quadro Canva',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -182,14 +182,14 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: '../img/projetos/img-calculadoraImc.png',
+            imagem: 'img/projetos/img-calculadoraImc.png',
             id: 8,
             titulo: 'Calculadora de Imc',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -207,14 +207,14 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: '../img/projetos/img-bateria.png',
+            imagem: 'img/projetos/img-bateria.png',
             id: 9,
             titulo: 'Bateria de Teclas',
             status: true,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -232,14 +232,14 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: '../img/loading.jpg',
+            imagem: 'img/loading.jpg',
             id: 10,
             titulo: 'Em Breve',
             status: false,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
@@ -257,14 +257,14 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: '../img/loading.jpg',
+            imagem: 'img/loading.jpg',
             id: 11,
             titulo: 'Em Breve',
             status: false,
             tecLogo: [
-                '../img/tec-logo-blue/001-html.png',
-                '../img/tec-logo-blue/002-css-3.png',
-                '../img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
             ],
         },
         dataModal: {
