@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Mateus Marques, Developer Front-End. Explore projetos, habilidades e minha jornada na programação.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Portfólio Mateus Marques, Developer Front-End</title>
+</head>
+
+<body>
+    <main>
+        <!-- inicio da seçao home -->
+        <section id="home">
+            <!--comeco do cabecalho/menu de navegacao -->
+            <header class="hCabecalho">
+                <div class="logo">
+                    <h1>MATEUS MARQUES</h1>
+                </div>
+
+                <!-- começo do menu de navegacao desktop  -->
+                <nav>
+                    <ul id="menuNav">
+                        <li class="menuLi">
+                            <a href="#home" class="aLink">Home</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#sobreMin" class="aLink">Sobre Mim</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#meusProjetos" class="aLink">Projetos</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#Hab" class="aLink">Habilidades</a>
+                        </li>
+                        <li class="menuLi">
+                            <a href="#sobreMin" class="aLink">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- fim do menu de navegaçao desktop -->
+
+                <!-- comeco do menu de navegaçao mobile -->
+                <div class="btnAbrir">
+                    <img src="img/abrir-menu.png" alt="img abrir menu" id="abrir">
+                </div>
+
+                <div class="menuMob" id="menuMob">
+                    <div class="fecharMenu">
+                        <img src="img/marca-cruzada.png" alt="" class="fecharMenu" id="btFechar">
+                    </div>
+                    <nav class="navMob">
+                        <ul class="ulMob">
+                            <li class="liMob">
+                                <a href="#home" rel="noopener noreferrer">Home</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#sobreMin" rel="noopener noreferrer">Sobre mim</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#Hab" rel="noopener noreferrer">Habilidades</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#meusProjetos" rel="noopener noreferrer">Projetos</a>
+                            </li>
+                            <li class="liMob">
+                                <a href="#contato" rel="noopener noreferrer">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- div responsavel pelo efeito de desfoque no site quando abrir menu -->
+                <div class="overlayMenu" id="overlay"></div>
+            </header>
+            <!--fim do menu de navegaçao mobile-->
+
+
+
+            <!-- comeeco do conteudo principaldo home (capa do portifolio) -->
+            <div id="home2">
+                <div class="zoom">
+                    <img src="img/eu.jpeg" alt=" minha foto" class="fotoMateus">
+                </div>
+                <h2>Mateus Marques Da Silva</h2>
+                <h3>Developer | Front-End</h3>
+
+                <!-- imgs de redes socaiasi que fica abaixo da foto -->
+                <div id="logosCocial">
+                    <figure class="social">
+                        <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">
+                            <img src="img/github.png" alt="img do git" class="git" id="imgSocial">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/mateus-maques-da-silva-b0664a31b/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="img/linkedin.png" alt="img do linkedin" class="linkedin" id="imgSocial">
+                        </a>
+
+                        <a href="https://www.instagram.com/mateus_marques000/?next=%2F" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="img/instagram.png" alt="img instagram" class="instagram" id="imgSocial">
+                        </a>
+
+                        <a href="https://wa.me/5511939069804" target="_blank" rel="noopener noreferrer">
+                            <img src="img/whatsapp (1).png" alt=" img whatsapp" class="whatsapp" id="imgSocial">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            </sections>
+        </section>
+        <!-- fim da pagina home -->
+
+        <!-- fim da pagina home/ comeco da pagina sobre min -- fim da pagina home/ comeco da pagina sobre min -- fim da pagina home/ comeco da pagina sobre min -- fim da pagina home/ comeco da pagina sobre min -->
+
+
+        <!--section sobre mim -->
+        <section id="sobreMin">
+            <h1 class="tituloMe">SOBRE MIM</h1>
+
+            <div id="conteudoMe">
+
+                <!-- comeco do lado esquerdo (contem a foto) -->
+                <div class="esquedaFoto">
+                    <picture class="pictureFG">
+                        <img src="img/mateusG.jpg" alt="foto de corpo todo" class="fotoG">
+                    </picture>
+
+                    <!-- obs: algumas coisa do meu figure ta o msm css da parte de home -->
+                    <div class="socialMin">
+                        <h2 class="contato">Contato - Redes Sociais</h2>
+                        <figure class="social">
+                            <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">
+                                <img src="img/github.png" alt="img do git" class="git" id="imgSocial">
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/mateus-maques-da-silva-b0664a31b/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/linkedin.png" alt="img do linkedin" class="linkedin" id="imgSocial">
+                            </a>
+
+                            <a href="https://www.instagram.com/mateus_marques000/?next=%2F" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/instagram.png" alt="img instagram" class="instagram" id="imgSocial">
+                            </a>
+
+                            <a href="https://wa.me/5511939069804" target="_blank" rel="noopener noreferrer">
+                                <img src="img/whatsapp (1).png" alt=" img whatsapp" class="whatsapp" id="imgSocial">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!-- fim do lado esquerdo (contem a foto) -->
+
+                <!-- comeco do lado direito (contem os textos) -->
+                <div class="direitaTexto">
+
+                    <h2 class="h2Me"> Minha Jornada no Desenvolvimento</h2>
+                    <p class="pSobre">Meu interesse pela área de desenvolvimento começou quando tive meu primeiro
+                        contato com programaçãodurante o curso técnico de Informática no ensino médio. Fiquei fascinado
+                        pela
+                        capacidade decriar e dar vida a um software. Após passar por alguns altos e baixos da vida,
+                        decidi seguir esse
+                        caminho. Deixei minha família e meu antigo emprego na bahia, e com o apoio dos meus tios, com
+                        quem moro atualmente,
+                        me mudei para São Paulo com o objetivo de realizar meu sonho de me tornarum desenvolvedor.</p>
+
+                    <p class="pSobre"> Ao chegar em São Paulo, comecei a trabalhar como garçom aos finais de semana,
+                        me matriculei no curso tecnólogo de Análise e Desenvolvimento de Sistemas e continuei meus
+                        estudos de programação. Desde então, venho desenvolvendo minhas habilidades e me apaixonando
+                        cada vez
+                        mais pela área. Gosto de comparar a programação a um jogo do estilo Souls-like — desafiador,
+                        porém recompensador. A cada obstáculo, evoluo, adquiro novas habilidades e, mesmo diante
+                        defalhas,
+                        a sensação de superação é incrível. Sinto que, a cada desafio vencido, me torno uma versão
+                        melhor de mim mesmo. </p>
+
+                    <h2 class="h2Me"> Por que me dar uma oportunidade?</h2>
+                    <p class="pSobre">Sou uma pessoa comunicativa, persistente e focada no que faço,
+                        pois acredito que todo esforço um dia será recompensado. Estou sempre buscando
+                        adquirir e aperfeiçoar meus conhecimentos, seja na faculdade, em cursos ou
+                        desenvolvendo projetos pessoais. Tenho uma grande vontade de aprender e evoluir,
+                        e por isso estou disposto até mesmo a aceitar estágios não remunerados. Embora eu possa
+                        não ser o programador mais experiente, garanto que serei o mais dedicado, e estou
+                        confiante de que não decepcionarei.</p>
+
+
+                    <div class="divTabela">
+                        <table border="0" class="tabela">
+                            <tbody>
+                                <tr>
+                                    <td> Nome: Mateus Marques Da Silva </td>
+                                    <td> instagram: @mateus_marques000 </td>
+                                </tr>
+                                <tr>
+                                    <td> Endereco: prainha-SP </td>
+                                    <td> Contato: (11) 93906-9804 </td>
+                                </tr>
+                                <tr>
+                                    <td> Idade: 21 anos </td>
+                                    <td> Linkedin: Mateus_Marques09 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fim do sobre mim -->
+
+
+        <!--comeco do meus projetos / fim do sobre mim -- comeco do meus projetos / fim do sobre mim -- comeco do meus projetos / fim do sobre mim -- comeco do meus projetos / fim do sobre mim -->
+
+
+        <!-- comeco do meus projetos -->
+        <section id="meusProjetos">
+            <div id="divP">
+                <h2 class="h1Projetos">PROJETOS</h2>
+                <div class="dProjetos">
+                    <div class="dPai-ProjDestaque">
+                        <h3 class="h3projetos">Projetos em Destaque</h3>
+                        <div class="projetosDestaque">
+                            <p style="color: white;">aqui tera os projetos em destaque</p>
+                            <!-- os projetos serao inseridos aqui atraves do javaScript, e quando clicar em algum projeto, ira abrir um modal com as especificações do projeto, video e links para acessar o projeto e os repositorio -->
+                        </div>
+                    </div>
+                    <div class="dPai-TodosProj">
+                        <h3 class="h3projetos">Todos os Projetos</h3>
+                        <div class="projetosDiv">
+                            <!-- os projetos serao inseridos aqui atraves do javaScript, e quando clicar em algum projeto, ira abrir um modal com as especificações do projeto, video e links para acessar o projeto e os repositorio -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <dialog id="modalEspc">
+                <div class="modalEspcProjeto">
+
+                    <button class="btnCloseModal"></button>
+
+                    <div class="divVideo">
+                        <video controls class="modalVideo">
+                            <source class="modalSourceVideo" src="" type="video/mp4">
+                            Seu navegador não suporta a tag <code>video</code>.
+                        </video>
+
+                        <div class="btnsVideo">
+                            <button class="btnAcessProj">acessar projeto</button>
+                            <button class="btnAvessRep">acessar repositórios</button>
+                        </div>
+                    </div>
+
+                    <div class="divEspecificacoes">
+                        <article class="art">
+                            <header class="headerProj">
+                                <h2 class="titProjModal">...</h2>
+                            </header>
+                            <section class="objProj">
+                                <h3>objetivo</h3>
+                                <p class="pObjetivo">... </p>
+                            </section>
+                            <section class="scopoProj">
+                                <h3 class="titleEscopo">Scopo do Projeto</h3>
+                                <p class="pScopo">....</p>
+                            </section>
+                            <section class="tecUsadas">
+                                <h3>Tecnologias usadas</h3>
+                                <ul class="ulTecUse">
+
+                                </ul>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </dialog>
+
+        </section>
+        <!-- fim da seçao meus projetos -->
+
+
+        <!-- fim da seçao meus projetos /comeco da section habilidades --fim da seçao meus projetos /comeco da section habilidades -- fim da seçao meus projetos /comeco da section habilidades -- -->
+
+
+        <!-- comeco da section habilidades -->
+        <section id="Hab">
+            <h1 class="tituloH">Habilidades</h1>
+
+            <div class="divTec2">
+
+                <div class="dtec" id="dhtml">
+                    <img src="img/img-tec-dominadas/html-icone.png" alt="Logo HTML5" class="himg">
+                    <p class="ptec">HTML5</p>
+                </div>
+
+                <div class="dtec" id="dcss">
+                    <img src="img/img-tec-dominadas/css-icone.png" alt="Logo CSS3" class="himg">
+                    <p class="ptec">CSS3</p>
+                </div>
+
+                <div class="dtec" id="djs">
+                    <img src="img/img-tec-dominadas/js-icone.png" alt="Logo JavaScript" class="himg">
+                    <p class="ptec">JavaScript</p>
+                </div>
+
+                <div class="dtec" id="dgit">
+                    <img src="img/img-tec-dominadas/git-icone.png" alt="Logo Git" class="himg">
+                    <p class="ptec">Git</p>
+                </div>
+                <div class="dtec" id="dgithub">
+                    <img src="img/img-tec-dominadas/github-icone.png" alt="Logo GitHub" class="himg">
+                    <p class="ptec">GitHub</p>
+                </div>
+
+                <div class="dtec" id="driact">
+                    <img src="img/img-tec-dominadas/react-icone.png" alt="Logo React" class="himg">
+                    <p class="ptec">React</p>
+                </div>
+
+                <div class="dtec" id="dtalwind">
+                    <img src="img/img-tec-dominadas/tw-icone.png" alt="Logo Tailwind CSS" class="himg">
+                    <p class="ptec">Tailwind CSS</p>
+                </div>
+
+                <div class="dtec" id="dTS">
+                    <img src="img/img-tec-dominadas/ts-icone.png" alt="Logo TypeScript" class="himg">
+                    <p class="ptec">TypeScript</p>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+    <!-- fim do conteudo princiapal de toda a pagina -->
+
+
+    <!-- comeco do rodape -->
+    <footer id="rodape">
+        <div class="direitos">
+            <p> Copyright © 2024 Mateus Marques. Todos os direitos reservados.</p>
+        </div>
+        <div class="social1">
+            <h1>Contato - Redes Sociais</h1>
+
+            <div id="rodapeSoc">
+                <figure class="social">
+                    <a href="https://github.com/settings/profile" target="_blank" rel="noopener noreferrer">
+                        <img src="img/github.png" alt="img do git" class="git">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mateus-maques-da-silva-b0664a31b/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/linkedin.png" alt="img do linkedin" class="linkedin">
+                    </a>
+
+                    <a href="https://www.instagram.com/mateus_marques000/?next=%2F" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="img/instagram.png" alt="img instagram" class="instagram">
+                    </a>
+
+                    <a href="https://wa.me/5511939069804" target="_blank" rel="noopener noreferrer">
+                        <img src="img/whatsapp (1).png" alt=" img whatsapp" class="whatsapp">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="javaScript/script.js"></script>
+</body>
+
+</html>
