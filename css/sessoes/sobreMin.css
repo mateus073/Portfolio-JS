@@ -1,0 +1,116 @@
+
+/* comeco da div sobre mim */
+
+/* div pricipal */
+#sobreMin {
+    padding: 1rem 2rem;
+    padding-top: 6rem;
+    border-bottom: solid 2px var(--destaque);
+    background-color: var(--fundo-secundario);
+}
+
+/* titulo da pagina sobre mim */
+.tituloMe {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: var(--font-g);
+    color: var(--texto-principal);
+}
+
+/* div do conteudo pricipal que contem as duas divs */
+#conteudoMe {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+
+/* div da esquerda que contem a foto */
+.esquedaFoto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem auto 1rem auto;
+}
+
+
+/* foto corpo todo */
+.fotoG {
+    margin: auto 10px;
+    border-radius: 10px;
+}
+
+
+/* icones de redes sociais */
+.socialMin {
+    margin: 1rem auto;
+}
+
+/* final da div da esquerda */
+
+
+
+
+/* comeco da div que contem os texto a direita */
+
+/* div da direita */
+.direitaTexto {
+    flex: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px var(--destaque);
+}
+
+
+.h2Me {
+    font-size: 1.2rem;
+    color: var(--texto-principal);
+    font-weight: bold;
+    font-family: var(--font-titulo2);
+    margin: 0.4rem;
+}
+
+.direitaTexto p {
+    text-indent: 20px;
+    max-width: 100%;
+    font-family: var(--font-texto);
+    font-size: var(--font-pp);
+    color: var(--texto-secundario);
+    margin-bottom: 0.3rem;
+
+}
+
+/* tabela que contem os dados */
+.divTabela {
+    width: 100%;
+}
+
+.tabela {
+    width: 100%;
+    border: solid 1px var(--destaque);
+    border-radius: 5px;
+    font-size: var(--font-p);
+    color: var(--texto-principal);
+    font-family: var(--font-texto);
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+td {
+    padding: 0.6rem;
+    white-space: nowrap;
+}
+
+
+
+
+/* FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- */
+

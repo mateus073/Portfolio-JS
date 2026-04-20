@@ -1,0 +1,147 @@
+
+/* cabecalho / menu */
+.hCabecalho {
+    z-index: 100;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    font-family: var(--font-texto);
+    background-color: var(--fundo-pricipal);
+}
+
+/* logo do menu*/
+.logo {
+    padding: 20px 5px;
+    background-color: var(--destaque);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--texto-principal);
+    font-family: var(--font-titulo);
+    white-space: nowrap;
+}
+
+
+
+/* comeca do menu de navegacao */
+#menuNav {
+    display: flex;
+    gap: 3rem;
+}
+
+.menuLi {
+    margin: 5px;
+    list-style: none;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+/* elfeito js de zom no li */
+.menuLi.jsLi {
+    transform: scale(1.2);
+}
+
+
+.aLink {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--branco);
+    transition: all 0.5s ease;
+}
+
+/* efeto js de mudar cor */
+.aLink.jsA {
+    color: var(--destaque);
+}
+
+/* fim do menu de desktop */
+
+
+
+/* comeco do meu menu mobile */
+.btnAbrir {
+    display: none;
+    margin-right: 10px;
+    z-index: 8888;
+}
+
+.menuMob {
+    flex-direction: column;
+    background-color: rgba(35, 45, 54, 0.9);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+/* funcao do js que abre menu*/
+.menuMob.abrirMenu {
+    width: 70%;
+}
+
+/* sempre que a class abrir menu existir dentro de menu mob a class .overlayMenu tb ira existir
+     dando o feito de apadado no site quando o menu estiver aberto  */
+.menuMob.abrirMenu~.overlayMenu {
+    display: block;
+}
+
+/* botao x que fecha menu */
+.fecharMenu {
+    margin: 10px;
+}
+
+.fecharMenu img {
+    width: 30px;
+    height: 30px;
+}
+
+/* itens do menu mobile */
+.menuMob nav ul {
+    text-align: right;
+}
+
+.menuMob nav ul li {
+    list-style: none;
+}
+
+.menuMob nav ul li a {
+    padding: 20px 8%;
+    text-decoration: none;
+    font-size: var(--font-m);
+    color: var(--texto-principal);
+    display: block;
+}
+
+.menuMob nav ul li a:hover {
+    background-color: var(--texto-secundario);
+    color: var(--texto-principal);
+}
+
+/* fim dos itens do menu mobile */
+
+
+/* efeito de escurecer o conteudo do site quando abrir o menu mobile 
+    (e so uma div que cobre todo o conteudo e tem com sua cor preta transparente)*/
+.overlayMenu {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9888;
+    display: none;
+}
+
+/* fim do meu menu mobile */
+
+
+/* fim do js das imgs de redes sociais */
+

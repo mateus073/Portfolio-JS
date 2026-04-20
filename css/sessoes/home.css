@@ -1,0 +1,118 @@
+
+
+
+/*comeco do conteudodo princial do home*/
+
+/* comeco da div principal do home (capa e menu de navegacao) */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../img/fundo-gg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* div do conteudo */
+#home2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 7%;
+    padding: 5rem 0rem 4rem 0rem;
+}
+
+
+/* cineci da minha foto */
+.fotoMateus {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.zoom {
+    margin: 10rem auto 3rem auto;
+    overflow: hidden;
+    height: 12rem;
+    width: 12rem;
+    transition: all 0.5s ease;
+}
+
+/* js responsavel por dar zom na img */
+.zoom.jsZ {
+    transform: scale(1.3);
+    filter: drop-shadow(3px 3px 6px rgb(24, 24, 25));
+}
+
+/* fim da minha foto  */
+
+
+
+/* comeco dos titulo que ficam abaixo da foto */
+#home2 h2 {
+    font-family: var(--font-titulo);
+    color: var(--texto-principal);
+    font-weight: bold;
+    font-size: var(--font-g);
+}
+
+#home2 h3 {
+    font-size: var(--font-m);
+    color: var(--texto-principal);
+    font-family: var(--font-texto);
+    font-weight: bold;
+}
+
+/* fim dos textos que ficam abaixo das fotos */
+
+
+
+/* começo links das redes sociais */
+
+/*todos os figures de redes sociais*/
+.meRedes img,
+.social img {
+    margin: auto 1rem;
+    height: 2rem;
+    border: solid 1px var(--branco);
+    background-color: var(--branco);
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px var(--branco);
+    transition: all 0.5s ease;
+}
+
+
+/* comeco do efeito js nas img de redes sociais  */
+.git.jsGit {
+    border: solid 2px #ffa200;
+    border-radius: 100%;
+    background-color: #ffa200;
+    transform: scale(1.1);
+}
+
+.linkedin.jsLkd {
+    border: solid 2px #0e76a8;
+    border-radius: 100%;
+    background-color: #0e76a8;
+    transform: scale(1.1);
+
+}
+
+.instagram.jsInsta {
+    border: solid 2px #fc70cb;
+    border-radius: 100%;
+    background-color: #ed00ae;
+    transform: scale(1.1);
+
+}
+
+.whatsapp.jsWhats {
+    border: solid 2px #4dfd01;
+    border-radius: 100%;
+    background-color: #4dfd01;
+    transform: scale(1.1);
+
+}

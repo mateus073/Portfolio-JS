@@ -1,0 +1,69 @@
+#secContratar {
+    width: 100%;
+  padding: 80px 20px;
+  border-top: 3px solid var(--destaque);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--fundo-secundario);
+}
+
+.dCtraServ {
+  width: 100%;
+ 
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.hContrServ {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.dCtraServ div {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnContratar {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #111;
+  color: #fff;
+}
+
+.btnContratar:hover {
+  transform: translateY(-2px);
+  background: #333;
+}
+
+.btnContratar:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .hContrServ {
+    font-size: 1.5rem;
+  }
+
+  .dCtraServ div {
+    flex-direction: column;
+  }
+
+  .btnContratar {
+    width: 100%;
+  }
+}

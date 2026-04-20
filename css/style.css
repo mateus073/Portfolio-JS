@@ -1,3 +1,14 @@
+@import url('./sessoes/header&menu.css');
+@import url('./sessoes/home.css');
+@import url('./sessoes/sobreMin.css');
+@import url('./sessoes/habilidade.css');
+@import url('./sessoes/projetos.css');
+@import url('./sessoes/carroselProjetos.css');
+@import url('./sessoes/contratarServ.css');
+@import url('./sessoes/footer.css');
+
+
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -42,275 +53,12 @@ e tamanho das fontes */
     --font-texto: "Roboto Mono", system-ui;
     --font-titulo2: "Oswald", sans-serif;
     --font-titulo: "Merriweather Sans", sans-serif;
-    --font-g: 3rem;
+    --font-g: 2.5rem;
     --font-m: 2rem;
     --font-p: 1rem;
     --font-pp: 0.8rem;
+    
 }
-
-
-/* comeco da div principal do home (capa e menu de navegacao) */
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../img/fundo-gg.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-/* cabecalho / menu */
-.hCabecalho {
-    z-index: 100;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    font-family: var(--font-texto);
-    background-color: var(--fundo-pricipal);
-}
-
-/* logo do menu*/
-.logo {
-    padding: 20px 5px;
-    background-color: var(--destaque);
-    border-radius: 4px;
-    font-size: 0.8rem;
-    color: var(--texto-principal);
-    font-family: var(--font-titulo);
-    white-space: nowrap;
-}
-
-
-
-/* comeca do menu de navegacao */
-#menuNav {
-    display: flex;
-    gap: 3rem;
-}
-
-.menuLi {
-    margin: 5px;
-    list-style: none;
-    white-space: nowrap;
-    transition: all 0.5s ease;
-}
-
-/* elfeito js de zom no li */
-.menuLi.jsLi {
-    transform: scale(1.2);
-}
-
-
-.aLink {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--branco);
-    transition: all 0.5s ease;
-}
-
-/* efeto js de mudar cor */
-.aLink.jsA {
-    color: var(--destaque);
-}
-
-/* fim do menu de desktop */
-
-
-
-/* comeco do meu menu mobile */
-.btnAbrir {
-    display: none;
-    margin-right: 10px;
-    z-index: 8888;
-}
-
-.menuMob {
-    flex-direction: column;
-    background-color: rgba(35, 45, 54, 0.9);
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9999;
-    width: 0%;
-    overflow: hidden;
-    transition: all 0.5s ease;
-}
-
-/* funcao do js que abre menu*/
-.menuMob.abrirMenu {
-    width: 70%;
-}
-
-/* sempre que a class abrir menu existir dentro de menu mob a class .overlayMenu tb ira existir
-     dando o feito de apadado no site quando o menu estiver aberto  */
-.menuMob.abrirMenu~.overlayMenu {
-    display: block;
-}
-
-/* botao x que fecha menu */
-.fecharMenu {
-    margin: 10px;
-}
-
-.fecharMenu img {
-    width: 30px;
-    height: 30px;
-}
-
-/* itens do menu mobile */
-.menuMob nav ul {
-    text-align: right;
-}
-
-.menuMob nav ul li {
-    list-style: none;
-}
-
-.menuMob nav ul li a {
-    padding: 20px 8%;
-    text-decoration: none;
-    font-size: var(--font-m);
-    color: var(--texto-principal);
-    display: block;
-}
-
-.menuMob nav ul li a:hover {
-    background-color: var(--texto-secundario);
-    color: var(--texto-principal);
-}
-
-/* fim dos itens do menu mobile */
-
-
-/* efeito de escurecer o conteudo do site quando abrir o menu mobile 
-    (e so uma div que cobre todo o conteudo e tem com sua cor preta transparente)*/
-.overlayMenu {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9888;
-    display: none;
-}
-
-/* fim do meu menu mobile */
-
-
-
-
-/*comeco do conteudodo princial do home*/
-
-/* div do conteudo */
-#home2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 7%;
-    padding: 5rem 0rem 4rem 0rem;
-}
-
-
-/* cineci da minha foto */
-.fotoMateus {
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    object-fit: cover;
-}
-
-.zoom {
-    margin: 10rem auto 3rem auto;
-    overflow: hidden;
-    height: 12rem;
-    width: 12rem;
-    transition: all 0.5s ease;
-}
-
-/* js responsavel por dar zom na img */
-.zoom.jsZ {
-    transform: scale(1.3);
-    filter: drop-shadow(3px 3px 6px rgb(24, 24, 25));
-}
-
-/* fim da minha foto  */
-
-
-
-/* comeco dos titulo que ficam abaixo da foto */
-#home2 h2 {
-    font-family: var(--font-titulo);
-    color: var(--texto-principal);
-    font-weight: bold;
-    font-size: var(--font-g);
-}
-
-#home2 h3 {
-    font-size: var(--font-m);
-    color: var(--texto-principal);
-    font-family: var(--font-texto);
-    font-weight: bold;
-}
-
-/* fim dos textos que ficam abaixo das fotos */
-
-
-
-/* começo links das redes sociais */
-
-/*todos os figures de redes sociais*/
-.meRedes img,
-.social img {
-    margin: auto 1rem;
-    height: 2rem;
-    border: solid 1px var(--branco);
-    background-color: var(--branco);
-    border-radius: 100%;
-    box-shadow: 1px 1px 2px var(--branco);
-    transition: all 0.5s ease;
-}
-
-
-/* comeco do efeito js nas img de redes sociais  */
-.git.jsGit {
-    border: solid 2px #ffa200;
-    border-radius: 100%;
-    background-color: #ffa200;
-    transform: scale(1.1);
-}
-
-.linkedin.jsLkd {
-    border: solid 2px #0e76a8;
-    border-radius: 100%;
-    background-color: #0e76a8;
-    transform: scale(1.1);
-
-}
-
-.instagram.jsInsta {
-    border: solid 2px #fc70cb;
-    border-radius: 100%;
-    background-color: #ed00ae;
-    transform: scale(1.1);
-
-}
-
-.whatsapp.jsWhats {
-    border: solid 2px #4dfd01;
-    border-radius: 100%;
-    background-color: #4dfd01;
-    transform: scale(1.1);
-
-}
-
-/* fim do js das imgs de redes sociais */
 
 
 
@@ -318,587 +66,9 @@ e tamanho das fontes */
 
 
 
-/* comeco da div sobre mim */
 
-/* div pricipal */
-#sobreMin {
-    padding: 1rem 2rem;
-    padding-top: 6rem;
-    border-bottom: solid 2px var(--destaque);
-    background-color: var(--fundo-secundario);
-}
 
-/* titulo da pagina sobre mim */
-.tituloMe {
-    text-transform: uppercase;
-    margin-bottom: 4rem;
-    text-align: center;
-    font-family: var(--font-titulo);
-    font-size: var(--font-g);
-    color: var(--texto-principal);
-}
 
-/* div do conteudo pricipal que contem as duas divs */
-#conteudoMe {
-    display: flex;
-    justify-content: center;
-    margin: 3rem auto;
-    flex-wrap: wrap;
-}
-
-
-/* div da esquerda que contem a foto */
-.esquedaFoto {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem auto 1rem auto;
-}
-
-
-/* foto corpo todo */
-.fotoG {
-    margin: auto 10px;
-    border-radius: 10px;
-}
-
-
-/* icones de redes sociais */
-.socialMin {
-    margin: 1rem auto;
-}
-
-/* final da div da esquerda */
-
-
-
-
-/* comeco da div que contem os texto a direita */
-
-/* div da direita */
-.direitaTexto {
-    flex: 1.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 10px;
-    border: solid 1px var(--destaque);
-}
-
-
-.h2Me {
-    font-size: 1.2rem;
-    color: var(--texto-principal);
-    font-weight: bold;
-    font-family: var(--font-titulo2);
-    margin: 0.4rem;
-}
-
-.direitaTexto p {
-    text-indent: 20px;
-    max-width: 100%;
-    font-family: var(--font-texto);
-    font-size: var(--font-pp);
-    color: var(--texto-secundario);
-    margin-bottom: 0.3rem;
-
-}
-
-/* tabela que contem os dados */
-.divTabela {
-    width: 100%;
-}
-
-.tabela {
-    width: 100%;
-    border: solid 1px var(--destaque);
-    border-radius: 5px;
-    font-size: var(--font-p);
-    color: var(--texto-principal);
-    font-family: var(--font-texto);
-    margin-top: 2rem;
-    justify-content: space-around;
-}
-
-td {
-    padding: 0.6rem;
-    white-space: nowrap;
-}
-
-
-
-
-/* FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- FIM DA SECTION SOBRE MIM / COMECO DA SECTION PROJETOS -- */
-
-
-
-
-/* comeco da secao dos meus projetos */
-
-/* div principal */
-#divP {
-    background-color: var(--fundo-secundario);
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-}
-
-
-.h1Projetos {
-    text-align: center;
-    font-family: var(--font-titulo);
-    font-size: var(--font-g);
-    color: var(--texto-principal);
-    padding: 2rem;
-}
-
-/* COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- */
-
-/* div pai dos projetoss */
-.projetosDiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin: 2rem auto;
-}
-
-.h3projetos {
-    display: inline-block; /* resolve isso aqui */
-
-    color: #ffffff;
-    font-size: 1.4rem;
-    font-family: var(--font-titulo);
-
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-
-    border-bottom: 2px solid #1f6feb;
-}
-
-/* div do card */
-.cardProjeto {
-    color: white;
-    width: 420px;
-    height: 250px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-    position: relative;
-}
-
-/* efieto de card ao passar o mouse */
-.cardProjeto:hover {
-    z-index: 10;
-    transform: scale(1.2);
-    box-shadow: 2px 2px 2px var(--fundo-pricipal);
-}
-
-/* efeito de sumir o texto da frente da img e a div overlay */
-.cardProjeto:hover .OverlayProjeto,
-.cardProjeto:hover .divTitulocard {
-    opacity: 0;
-}
-
-
-/* img do card */
-.imgProjeto {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 10px 0px 0px;
-    border-bottom: solid 3px var(--destaque);
-}
-
-/* div que contem os icones de tec usadas e o titulo  */
-.divTitulocard {
-    z-index: 5;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 1;
-    font-family: var(--font-titulo2);
-    font-size: var(--font-p);
-    transition: all 0.5s ease;
-}
-
-.divTitulocard img {
-    width: 20px;
-    height: 20px;
-    margin: 5px
-}
-
-.OverlayProjeto {
-    z-index: 4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    opacity: 1;
-    transition: all 0.5s ease;
-}
-
-/* div que aparece e some com o hover na div projeto */
-.divBtnModal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0px 0px 10px 10px;
-    background-color: var(--suporte);
-    padding: 0 16px;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
-}
-
-/* Quando o elemento pai (ex.: .cardProjeto) estiver em hover, o .divBtnModal é exibido */
-.cardProjeto:hover .divBtnModal {
-    height: 45px;
-    padding: 0px 16px;
-}
-
-.divBtnModal .pStatus {
-    color: var(--texto-principal);
-    font-size: var(--font-pp);
-    font-family: var(--font-texto);
-    font-weight: bold;
-}
-
-.divBtnModal .btnProjeto {
-    cursor: pointer;
-    color: var(--texto-principal);
-    font-size: var(--font-pp);
-    font-family: var(--font-texto);
-    background-color: var(--destaque);
-    border: none;
-    border-radius: 8px;
-    padding: 6px;
-    font-weight: bold;
-    z-index: 22;
-}
-
-
-
-
-/* css do modal de especificações do projeto */
-.modalEspc::backdrop {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-dialog {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    border: none;
-    border-radius: 16px;
-    width: 80%;
-}
-
-.modalEspcProjeto {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: var(--fundo-pricipal);
-    border: none;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
-    width: 100%;
-    min-height: 500px;
-}
-
-
-/* btn fecha modal */
-.btnCloseModal {
-    background-image: url("../img/btn-fechar.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: transparent;
-    width: 24px;
-    height: 24px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 12px;
-    right: 12px
-}
-
-.divVideo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.divVideo video {
-    width: 600px;
-    cursor: pointer;
-    margin-bottom: 16px;
-}
-
-.divVideo .btnsVideo {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.divVideo .btnsVideo button {
-    color: var(--texto-principal);
-    font-size: var(--font-pp);
-    font-family: var(--font-texto);
-    background-color: var(--destaque);
-    border: none;
-    border-radius: 8px;
-    padding: 6px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-
-
-
-.divEspecificacoes {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    color: var(--texto-principal);
-}
-
-.divEspecificacoes .art {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    font-family: var(--font-texto);
-}
-
-.art section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.art .headerProj {
-    font-size: var(--font-p);
-    color: var(--destaque);
-}
-
-.art h3 {
-    margin-bottom: 6px;
-    font-size: var(--font-p);
-    font-weight: bold;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    font-size: var(--font-pp);
-    line-height: 1.6;
-    text-align: left;
-
-    color: #555;
-}
-
-p {
-    font-size: var(--font-pp);
-    line-height: 1.6;
-    text-align: center;
-    color: #555;
-}
-
-/* FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- /
-
-
-
-
-/* comeco da section de habilidades */
-/* ===== Seção de Habilidades ===== *//* ===== Seção de Habilidades ===== */
-#Hab {
-    background-color: var(--fundo-secundario);
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 0 2rem;
-}
-
-.tituloH {
-    margin: 0 20px;
-    padding: 2rem 0;
-    text-align: center;
-    font-size: var(--font-g);
-    font-family: var(--font-titulo);
-    color: var(--texto-principal);
-    text-transform: uppercase;
-    border-top: 3px solid var(--destaque);
-}
-
-/* ===== Grid de Tecnologias ===== */
-.divTec2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1.25rem;
-
-    width: min(100%, 1100px);
-    margin: 4rem auto 0;
-    padding: 0 1.5rem;
-}
-
-/* ===== Card de tecnologia ===== */
-.dtec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    padding: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-
-    background-color: #0D1117;
-    border: 1px solid rgba(201, 209, 217, 0.12);
-    border-radius: 16px;
-
-    /* mantém transição só pra não quebrar seu hover já existente */
-    transition: 0.3s ease;
-
-    --glow-color: transparent;
-}
-
-/* ===== Ícones / imagens ===== */
-.dtec img,
-.dtec i {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-/* ===== Texto ===== */
-.ptec {
-    max-width: 160px;
-    font-size: var(--font-pp);
-    font-family: var(--font-texto);
-    color: var(--texto-secundario);
-    line-height: 1.3;
-    margin: 0;
-}
-
-/* ===== Efeito de Foco no Hover ===== */
-.divTec2:hover .dtec {
-    opacity: 0.45;
-    filter: blur(1px);
-    transform: scale(0.9);
-}
-
-.divTec2:hover .dtec:hover {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px var(--glow-color));
-    transform: scale(1.05);
-}
-
-.himg {
-    width: 60px;
-    height: 60px;
-}
-
-/* ===== Cores de Glow por Tecnologia ===== */
-#dhtml   { --glow-color: #fc6c34; }
-#dcss    { --glow-color: #72c2e4; }
-#djs     { --glow-color: #e4ac04; }
-#dgit    { --glow-color: #f24949; }
-#dgithub { --glow-color: #fffefe; }
-#dTS     { --glow-color: #494ff2; }
-#dtalwind { --glow-color: #49eaf2; }
-#driact  { --glow-color: #49a9f2; }
-
-
-
-/* fim das divs com img e p das tecnologias e dos efeios de hover nelas */
-
-/* paragrafo de texnologias extras */
-.tecTexto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    border-top: solid 3px var(--destaque);
-}
-
-.h4Extras {
-    font-family: var(--font-titulo);
-    font-size: var(--font-m);
-    color: var(--texto-principal);
-    font-weight: bold;
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.pTecExtr {
-    font-family: var(--font-texto);
-    color: var(--texto-principal);
-    font-size: var(--font-p);
-    max-width: 80%;
-    font-weight: 400;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-/* fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas fim da secao de tecnologias dominadas */
-
-/* comeco da secao de cursos */
-
-
-/* FIM DA SECTION HABILIDADES / COMECO DO RODAPE -- FIM DA SECTION HABILIDADES / COMECO DO RODAPE -- FIM DA SECTION HABILIDADES / COMECO DO RODAPE --  */
-
-
-
-/* comeco do rodape */
-#rodape {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--fundo-pricipal);
-}
-
-.direitos {
-    font-size: var(--font-pp);
-    color: var(--texto-principal);
-    font-family: var(--font-texto);
-    font-weight: bold;
-}
-
-.social1 h1,
-.contato {
-    color: var(--texto-principal);
-    text-align: center;
-    font-family: var(--font-texto);
-    font-size: var(--font-pp);
-    margin-bottom: 15px;
-}
-
-.social1 img {
-    height: 25px;
-    box-shadow: none;
-}
-
-/*fim do rodape*/
 
 
 
@@ -932,6 +102,16 @@ p {
 
     .h3esp {
         display: none;
+    }
+
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    .card, 
+    .cardProjeto {
+        width: 300px;
+        height: 180px;
     }
 }
 
@@ -1176,6 +356,10 @@ p {
         padding: 2px;
     }
 
+    .projetosDiv {
+        gap: 1rem;
+    }
+
     .h1Projetos {
         padding: 10px;
     }
@@ -1192,16 +376,153 @@ p {
         display: none;
     }
 
-    .cardProjeto {
-        width: 300px;
-        height: 180px;
+    .cardProjeto,
+    .card {
+        width: 150px;
+        height: 100px;
     }
+
+    .tituloProjeto {
+        font-size: var(--font-p);
+    }
+
+    /* .tecUsadas {
+
+    } */
+
+.divTitulocard img {
+    width: 15px;
+    height: 15px;
+    margin: 0.1rem
+}
+
 
     .divVideo video {
         margin-top: 10px;
         min-width: 300px;
         max-width: 100%;
     }
+
+    
+
+
+/* div que aparece e some com o hover na div projeto */
+
+/* div que aparece e some com o hover na div projeto */
+.divBtnModal {
+    border-radius: 0px 0px 8px 8px;
+    padding: 0 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Quando o elemento pai (ex.: .cardProjeto) estiver em hover, o .divBtnModal é exibido */
+.cardProjeto:hover .divBtnModal {
+    height: 32px;
+    padding: 0px 8px;
+}
+
+.divBtnModal .pStatus {
+    display: none ;
+}
+
+.divBtnModal .btnProjeto {
+    color: var(--texto-principal);
+    font-size: 0.5rem;
+    padding: 7px;
+}
+
+.modalEspcProjeto {
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    min-height: 250px;
+}
+
+/* btn fecha modal */
+.btnCloseModal {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    right: 8px;
+}
+
+.divVideo video {
+    width: 100%;
+    min-width: unset;
+    max-width: 100vw;
+    margin-bottom: 8px;
+}
+
+.divVideo .btnsVideo {
+    gap: 1rem;
+}
+
+.divVideo .btnsVideo button {
+    font-size: 0.6rem;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+
+
+
+.divEspecificacoes {
+   
+    min-width: 300px;
+    
+    gap: 1.5rem;
+ 
+}
+
+.divEspecificacoes .art {
+
+    gap: 1rem;
+ 
+}
+
+
+.art .headerProj {
+    font-size: var(--font-p);
+
+}
+
+.art h3 {
+    margin-bottom: 6px;
+    font-size: var(--font-p);
+
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: var(--font-pp);
+    line-height: 1.6;
+
+}
+
+p {
+    font-size: var(--font-pp);
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,61 @@
+/* carrosel de projetos */
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 2rem auto;
+    width: 100%; /* ✅ responsivo */
+    max-width: 1200px; /* ✅ limita em telas grandes */
+    height: 330px;
+    padding-bottom: 50px;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.carousel-track.no-transition {
+    transition: none;
+}
+
+.card {
+    color: white;
+    width: 360px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: relative;
+    align-content: center;
+}
+
+
+/* efieto de card ao passar o mouse */
+.card:hover {
+    z-index: 10;
+    /* ✅ nunca use transform aqui — briga com o translateX do JS */
+    transform: scale(1.2);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    transition: box-shadow 0.3s ease; /* ✅ só anima o que você quer */
+}
+
+/* efeito de sumir o texto da frente da img e a div overlay */
+.card:hover .OverlayProjeto,
+.card:hover .divTitulocard {
+    opacity: 0;
+}
+
+
+/* Quando o elemento pai (ex.: .cardProjeto) estiver em hover, o .divBtnModal é exibido */
+.card:hover .divBtnModal {
+    height: 45px;
+    padding: 0px 16px;
+}
+
+
+
+

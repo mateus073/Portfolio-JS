@@ -20,7 +20,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "Desafiar meus conhecimentos em um projeto mais complexo, consolidando tudo que aprendi até o momento.",
                 escopo: "Aplicação que permite aos usuários realizar transações (depósitos, transferências), efetuar compras a crédito e débito, visualizar e pagar faturas, acompanhar investimentos e rendimentos, além de consultar o extrato, histórico de operações e status do cartão.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -47,7 +47,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "Desenvolver um projeto mais completo utilizando programação funcional, com o intuito de consolidar meus conhecimentos em JavaScript e, ao mesmo tempo, auxiliar nos meus estudos de inglês.",
                 escopo: "Aplicação interativa para aprender e praticar inglês, com duas modalidades principais: completar frases e montar frases, organizadas por temas. O projeto também inclui sistema de pontuação, histórico de desempenho, e artigos de apoio para estudo.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -73,7 +73,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "pôr em prática conhecimentos de JavaScript, com ênfase em programação orientada a objetos, por meio da criação de um jogo da velha com um tema inusitado.",
                 escopo: "Aplicação interativa que permite jogar o clássico jogo da velha, integrando lógica avançada e conceitos de orientação a objetos, com uma narrativa divertida inspirada no universo do 'Cão Covarde'.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -99,7 +99,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "Pôr em prática os conhecimentos adquiridos sobre requisições e consumo de APIs em JavaScript.",
                 escopo: "Aplicação clássica que exibe a previsão do tempo atual para qualquer local do Brasil, utilizando a API de clima da OpenWeather.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -126,7 +126,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "Pôr em prática os conhecimentos adquiridos sobre programação orientada a objetos em JavaScript.",
                 escopo: "Jogo desenvolvido em JavaScript utilizando POO, inspirado em street fight, com uma abordagem temática baseada no universo de Chaves",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -151,7 +151,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "Aprender a fazer o clássico formulário de login, onde pude praticar conhecimentos básicos de HTML, CSS e JavaScript.",
                 escopo: "Formulário de login interativo com validação de campos e feedback visual, desenvolvido em HTML, CSS e JavaScript.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -176,7 +176,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "Põr em pratica conhecimentos em HTML, CSS e JavaScript com foco na tag canvas, explorando seus recursos e possibilidades.",
                 escopo: "Aplicação interativa de desenho desenvolvida em JavaScript utilizando a tag canvas, onde é possível pintar, escolher a cor do lápis, apagar e outras funcionalidades.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -201,7 +201,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: "projeto desenvolvido com o intuito de exercitar a logica e conhecimentos basicos sobre javaScript, html e css.",
                 escopo: "Aplicação responsiva que calcula o IMC com base nos dados informados, exibe resultados detalhados e fornece orientações para promover hábitos de vida saudáveis.",
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -226,7 +226,7 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto',
                 objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
                 escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
     },
@@ -247,18 +247,9 @@ export const dataProjetos = [
             titulo: 'Em Breve',
             linkProjeto: 'https://www.google.com',
             linkGithub: 'https://www.google.com',
-            texto: {
-                titulo: 'Sobre o Projeto',
-                objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
-            },
-        }
-    },
-    {
-        dataPost: {
-            imagem: 'img/loading.jpg',
-            id: 11,
+            objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+            escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+            tecnologias: ['HTML', 'CSS', 'JavaScript'],
             titulo: 'Em Breve',
             status: false,
             tecLogo: [
@@ -276,8 +267,109 @@ export const dataProjetos = [
                 titulo: 'Sobre o Projeto1',
                 objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
                 escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                tecnologias: ['HTML5 para a estrutura semântica do conteúdo.', 'CSS3 para estilização e layout responsivo.', 'JavaScript para a lógica e funcionalidade do projeto.'],
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
+
     },
-]
+    {
+        dataPost: {
+            imagem: 'img/loading.jpg',
+            id: 12,
+            titulo: 'projeto destaque',
+            status: false,
+            tecLogo: [
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
+            ],
+        },
+        dataModal: {
+            video: 'img/projetos/video-teste.mp4',
+            titulo: 'projeto destaque',
+            linkProjeto: 'https://www.google.com',
+            linkGithub: 'https://www.google.com',
+            texto: {
+                titulo: 'Sobre o Projeto1',
+                objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                tecnologias: ['React', 'tailwind', 'typescript'],
+            },
+        }
+
+    },
+    {
+        dataPost: {
+            imagem: 'img/loading.jpg',
+            id: 13,
+            titulo: 'projeto destaque',
+            status: false,
+            tecLogo: [
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
+            ],
+        },
+        dataModal: {
+            video: 'img/projetos/video-teste.mp4',
+            titulo: 'projeto destaque',
+            linkProjeto: 'https://www.google.com',
+            linkGithub: 'https://www.google.com',
+            texto: {
+                titulo: 'Sobre o Projeto1',
+                objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                tecnologias: ['React', 'tailwind', 'typescript'],
+            },
+        }
+
+    },
+    {
+        dataPost: {
+            imagem: 'img/loading.jpg',
+            id: 14,
+            titulo: 'Barber',
+            status: false,
+            tecLogo: [
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
+            ],
+        },
+        dataModal: {
+            video: 'img/projetos/video-barber.mp4',
+            titulo: 'Barber',
+            linkProjeto: 'https://github.com/mateus073/Barber_site',
+            linkGithub: 'https://github.com/mateus073/Barber_site',
+            texto: {
+                titulo: 'Sobre o Barber',
+                objetivo: 'Desenvolver um sistema de agendamento online para barbearias, facilitando o controle de horários e reduzindo a necessidade de organização manual via WhatsApp, proporcionando mais praticidade tanto para o cliente quanto para o barbeiro.',
+                escopo: 'O projeto contempla uma interface completa onde o usuário pode selecionar serviços, visualizar dias e horários disponíveis, realizar o agendamento e enviar automaticamente a solicitação para o WhatsApp do barbeiro. Também inclui integração com API simulada para controle de disponibilidade e gerenciamento de estado global da aplicação.',
+                tecnologias: ['React', 'Tailwind CSS', 'TypeScript', 'Axios', 'JSON Server'],
+            },
+    }
+
+    },
+{
+    dataPost: {
+        imagem: 'img/loading.jpg',
+            id: 15,
+                titulo: 'projeto destaque',
+                    status: false,
+                        tecLogo: [
+                            'img/tec-logo-blue/001-html.png',
+                            'img/tec-logo-blue/002-css-3.png',
+                            'img/tec-logo-blue/003-script-java.png'
+                        ],
+        },
+    dataModal: {
+        video: 'img/projetos/video-teste.mp4',
+            titulo: 'Projeto destaque',
+                linkProjeto: 'https://www.google.com',
+                    linkGithub: 'https://www.google.com',
+                        objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                            escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                                tecnologias: ['HTML', 'CSS', 'JavaScript'],
+            },
+}
+    ]

@@ -1,0 +1,35 @@
+
+
+/* comeco do rodape */
+#rodape {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--fundo-pricipal);
+}
+
+.direitos {
+    font-size: var(--font-pp);
+    color: var(--texto-principal);
+    font-family: var(--font-texto);
+    font-weight: bold;
+}
+
+.social1 h1,
+.contato {
+    color: var(--texto-principal);
+    text-align: center;
+    font-family: var(--font-texto);
+    font-size: var(--font-pp);
+    margin-bottom: 15px;
+}
+
+.social1 img {
+    height: 25px;
+    box-shadow: none;
+}
+
+/*fim do rodape*/
+

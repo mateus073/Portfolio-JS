@@ -1,0 +1,297 @@
+
+
+/* comeco da secao dos meus projetos */
+
+/* div principal */
+#divP {
+    background-color: var(--fundo-secundario);
+    padding: 4rem 2rem;
+}
+
+
+.h1Projetos {
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-size: var(--font-g);
+    color: var(--texto-principal);
+    padding: 2rem;
+}
+
+/* COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- COMEÇO DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE ESPECIFICAÇOES -- */
+/* div pai dos projetos */
+.dProjetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 2rem;
+    
+}
+
+.dPaiProjetos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.projetosDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem auto;
+}
+
+
+.h3projetos {
+    display: inline-block;
+    align-self: flex-start; /* alinha o h3 à esquerda junto com o conteúdo */
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-family: var(--font-titulo);
+    padding-top: 1rem;
+    border-bottom: 2px solid #1f6feb;
+}
+/* div do card */
+.cardProjeto {
+    color: white;
+    width: 360px;
+    height: 210px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+/* efieto de card ao passar o mouse */
+.cardProjeto:hover {
+    z-index: 10;
+    transform: scale(1.2);
+    box-shadow: 2px 2px 2px var(--fundo-pricipal);
+}
+
+/* efeito de sumir o texto da frente da img e a div overlay */
+.cardProjeto:hover .OverlayProjeto,
+.cardProjeto:hover .divTitulocard {
+    opacity: 0;
+}
+
+
+/* img do card */
+.imgProjeto {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: solid 3px var(--destaque);
+}
+
+/* div que contem os icones de tec usadas e o titulo  */
+.divTitulocard {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    font-family: var(--font-titulo2);
+    font-size: 0.875rem;
+    transition: all 0.5s ease;
+}
+
+.divTitulocard img {
+    width: 25px;
+    height: 25px;
+    margin: 0.3rem
+}
+
+.OverlayProjeto {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+/* div que aparece e some com o hover na div projeto */
+.divBtnModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--suporte);
+    padding: 0 16px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Quando o elemento pai (ex.: .cardProjeto) estiver em hover, o .divBtnModal é exibido */
+.cardProjeto:hover .divBtnModal {
+    height: 45px;
+    padding: 0px 16px;
+}
+
+.divBtnModal .pStatus {
+    color: var(--texto-principal);
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    font-weight: bold;
+}
+
+.divBtnModal .btnProjeto {
+    cursor: pointer;
+    color: var(--texto-principal);
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    background-color: var(--destaque);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    font-weight: bold;
+    z-index: 22;
+}
+
+
+
+
+/* css do modal de especificações do projeto */
+#modalEspc::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 16px;
+    width: 80%;
+}
+
+.modalEspcProjeto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--fundo-pricipal);
+    border: none;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 500px;
+    
+}
+
+
+/* btn fecha modal */
+.btnCloseModal {
+    background-image: url("../../img/btn-x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    
+}
+
+.divVideo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.divVideo video {
+    width: 600px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.divVideo .btnsVideo {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.divVideo .btnsVideo button {
+    color: var(--texto-principal);
+    font-size: var(--font-pp);
+    font-family: var(--font-texto);
+    background-color: var(--destaque);
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+.divEspecificacoes {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--texto-principal);
+}
+
+.divEspecificacoes .art {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3rem;
+    font-family: var(--font-texto);
+}
+
+.art section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.art .headerProj {
+    font-size: var(--font-p);
+    color: var(--destaque);
+}
+
+.art h3 {
+    margin-bottom: 6px;
+    font-size: var(--font-p);
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: var(--font-pp);
+    text-align: left;
+    color: #b1b1b1;
+    font-weight: bold;
+}
+
+p {
+    font-size: var(--font-pp);
+    text-align: left;
+    color: #b1b1b1;
+}
+
+/* FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- FINAL DA SECTION DE ESPECIFICAÇOES / COMECO DA SECTION DE HABILIDADES -- /
+
