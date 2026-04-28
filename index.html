@@ -25,61 +25,38 @@
                 <div class="logo">
                     <h1>MATEUS MARQUES</h1>
                 </div>
-
-                <!-- começo do menu de navegacao desktop  -->
+            
                 <nav>
                     <ul id="menuNav">
-                        <li class="menuLi">
-                            <a href="#home" class="aLink">Home</a>
-                        </li>
-                        <li class="menuLi">
-                            <a href="#sobreMin" class="aLink">Sobre Mim</a>
-                        </li>
-                        <li class="menuLi">
-                            <a href="#meusProjetos" class="aLink">Projetos</a>
-                        </li>
-                        <li class="menuLi">
-                            <a href="#Hab" class="aLink">Habilidades</a>
-                        </li>
-                        <li class="menuLi">
-                            <a href="#sobreMin" class="aLink">Contato</a>
-                        </li>
+                        <li class="menuLi"><a href="#home" class="aLink">Home</a></li>
+                        <li class="menuLi"><a href="#sobreMin" class="aLink">Sobre Mim</a></li>
+                        <li class="menuLi"><a href="#meusProjetos" class="aLink">Projetos</a></li>
+                        <li class="menuLi"><a href="#Hab" class="aLink">Habilidades</a></li>
                     </ul>
                 </nav>
-                <!-- fim do menu de navegaçao desktop -->
-
-                <!-- comeco do menu de navegaçao mobile -->
-                <div class="btnAbrir">
-                    <img src="img/abrir-menu.png" alt="img abrir menu" id="abrir">
+            
+                <div class="btnAbrir" id="abrir">
+                    <img src="img/abrir-menu.png" alt="Abrir menu">
                 </div>
-
+            
                 <div class="menuMob" id="menuMob">
-                    <div class="fecharMenu">
-                        <img src="img/marca-cruzada.png" alt="" class="fecharMenu" id="btFechar">
+                    <div class="fecharMenu" id="btFechar">
+                        <img src="img/marca-cruzada.png" alt="Fechar menu">
                     </div>
+            
                     <nav class="navMob">
                         <ul class="ulMob">
-                            <li class="liMob">
-                                <a href="#home" rel="noopener noreferrer">Home</a>
-                            </li>
-                            <li class="liMob">
-                                <a href="#sobreMin" rel="noopener noreferrer">Sobre mim</a>
-                            </li>
-                            <li class="liMob">
-                                <a href="#Hab" rel="noopener noreferrer">Habilidades</a>
-                            </li>
-                            <li class="liMob">
-                                <a href="#meusProjetos" rel="noopener noreferrer">Projetos</a>
-                            </li>
-                            <li class="liMob">
-                                <a href="#contato" rel="noopener noreferrer">Contato</a>
-                            </li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#sobreMin">Sobre mim</a></li>
+                            <li><a href="#Hab">Habilidades</a></li>
+                            <li><a href="#meusProjetos">Projetos</a></li>
+                            <li><a href="#contato">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
-                <!-- div responsavel pelo efeito de desfoque no site quando abrir menu -->
                 <div class="overlayMenu" id="overlay"></div>
             </header>
+            
             <!--fim do menu de navegaçao mobile-->
 
 
@@ -413,12 +390,12 @@
 
         </section>
 
-        <section id="secContratar">
+        <section class="hire-section">
             <div class="dCtraServ">
-                <h2 class="hContrServ">clique em uma das opçoes abaixo</h2>
-                <div>
-                    <button class="btnContratar">Contratar Serviços</button>
-                    <button class="btnContratar">Nao contratar serviçoes</button>
+                <h2 class="hContrServ">Caso tenha gostado do meu trabalho e queira me dar uma oportunidade, clique em um dos dois botões abaixo</h2>
+                <div class="buttons-container" id="buttonsContainer">
+                    <button class="btn btn-no" id="btnNo">Infelizmente não</button>
+                    <button class="btn btn-yes" id="btnYes">Sim, eu quero!</button>
                 </div>
             </div>
         </section>
@@ -459,6 +436,7 @@
     </footer>
     <script type="module" src="javaScript/script.js"></script>
     <script type="module" src="javaScript/projetos.js"></script>
+    <script type="module" src="javaScript/contratar.js"></script>
 </body>
 
 </html>

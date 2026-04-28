@@ -97,21 +97,30 @@ function corLink() {
 
 
 // js do menu mobille abrir e fechar 
-let abri = document.getElementById('abrir')
-let menu = document.getElementById('menuMob')
-let fecha = document.getElementById('btFechar')
-let overlay = document.getElementById('overlay')
+const btnAbrir = document.getElementById('abrir');
+const menu = document.getElementById('menuMob');
+const btnFechar = document.getElementById('btFechar');
+const overlay = document.getElementById('overlay');
 
-abri.addEventListener('click', () => {
-    menu.classList.add('abrirMenu')
-})
+function abrirMenu() {
+    menu.classList.add('abrirMenu');
+    document.body.classList.add('menuAberto');
+}
 
-fecha.addEventListener('click', () => {
-    menu.classList.remove('abrirMenu')
-})
+function fecharMenu() {
+    menu.classList.remove('abrirMenu');
+    document.body.classList.remove('menuAberto');
+}
 
-overlay.addEventListener('click', () => {
-    menu.classList.remove('abrirMenu')
-})
+btnAbrir?.addEventListener('click', abrirMenu);
+btnFechar?.addEventListener('click', fecharMenu);
+overlay?.addEventListener('click', fecharMenu);
 
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') fecharMenu();
+});
+
+document.querySelectorAll('.menuMob a').forEach((link) => {
+    link.addEventListener('click', fecharMenu);
+});
 // fim do js do meu menu mobile (abrir e fechar)

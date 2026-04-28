@@ -1,69 +1,87 @@
-#secContratar {
-    width: 100%;
-  padding: 80px 20px;
-  border-top: 3px solid var(--destaque);
+.hire-section {
+  /* min-height: 100vh; */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-top: 3px solid var(--destaque);
   background: var(--fundo-secundario);
 }
 
-.dCtraServ {
-  width: 100%;
- 
+.hire-section h2 {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  color: var(--texto-principal);
   text-align: center;
-  background: #ffffff;
-  padding: 40px 24px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.5rem;
+  max-width: 800px;
+  line-height: 1.5;
+  padding-top: 2rem;
 }
 
-.hContrServ {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 24px;
-  text-transform: capitalize;
-}
-
-.dCtraServ div {
+.buttons-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.btnContratar {
-  padding: 14px 24px;
+.btn {
+  padding: 0.8rem 1.7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
-  background: #111;
-  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.btnContratar:hover {
-  transform: translateY(-2px);
-  background: #333;
+.btn-no {
+  position: absolute;
+  background-color: #ff4757;
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 10;
 }
 
-.btnContratar:active {
-  transform: scale(0.98);
+.btn-no:hover {
+  transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-  .hContrServ {
+.btn-yes {
+  background-color: #2ed573;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.btn-yes:hover {
+  background-color: #26de81;
+  transform: scale(1.1);
+}
+
+.btn-yes:active {
+  transform: scale(0.95);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hire-section h2 {
     font-size: 1.5rem;
   }
 
-  .dCtraServ div {
-    flex-direction: column;
+  .buttons-container {
+    height: 300px;
   }
 
-  .btnContratar {
-    width: 100%;
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 }
