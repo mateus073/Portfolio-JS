@@ -1,53 +1,53 @@
 export const dataProjetos = [
     {
         dataPost: {
-            imagem: 'img/projetos/img-bank.png',
+            imagem: 'img/projetos/print-listaTare.png',
             id: 1,
-            titulo: 'Banco Ficticio',
+            titulo: 'Lista de Tarefas',
             status: false,
             tecLogo: [
-                'img/tec-logo-blue/001-html.png',
-                'img/tec-logo-blue/002-css-3.png',
-                'img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/react-icone-azul.png',
+                'img/tec-logo-blue/tw-icone-azul.png',
+                'img/tec-logo-blue/ts-icone-azul.png',
             ]
         },
         dataModal: {
-            video: 'img/projetos/video-teste.mp4',
-            titulo: 'Banco Ficticio',
-            linkProjeto: 'https://www.google.com',
-            linkGithub: 'https://www.google.com',
+            video: 'img/projetos/video-toDoList.mp4',
+            titulo: 'Lista de Tarefas',
+            linkProjeto: 'https://github.com/mateus073?tab=repositories',
+            linkGithub: 'https://github.com/mateus073?tab=repositories',
             texto: {
                 titulo: 'Sobre o Projeto',
-                objetivo: "Desafiar meus conhecimentos em um projeto mais complexo, consolidando tudo que aprendi até o momento.",
-                escopo: "Aplicação que permite aos usuários realizar transações (depósitos, transferências), efetuar compras a crédito e débito, visualizar e pagar faturas, acompanhar investimentos e rendimentos, além de consultar o extrato, histórico de operações e status do cartão.",
-                tecnologias: ['HTML', 'CSS', 'JavaScript'],
+                objetivo: "Aplicar e consolidar meus conhecimentos em um projeto mais complexo, focado em lógica de programação.",
+                escopo: "Aplicação que simula um banco digital, permitindo realizar depósitos, transferências, compras no crédito e débito, visualizar e pagar faturas, acompanhar investimentos e consultar extrato, histórico e status do cartão.",
+                tecnologias: ['React', 'Tailwind', 'TypeScript'],
             },
         }
     },
 
     {
         dataPost: {
-            imagem: 'img/projetos/img-quizEnglish.png',
+            imagem: 'img/projetos/print-chat.png',
             id: 2,
-            titulo: 'Quiz English',
+            titulo: 'Chat Simples',
             status: true,
             tecLogo: [
-                'img/tec-logo-blue/001-html.png',
-                'img/tec-logo-blue/002-css-3.png',
-                'img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/react-icone-azul.png',
+                'img/tec-logo-blue/tw-icone-azul.png',
+                'img/tec-logo-blue/ts-icone-azul.png',
             ],
 
         },
         dataModal: {
-            video: 'img/projetos/video-quizEnglish.mp4',
-            titulo: 'Quiz English',
-            linkProjeto: 'https://www.google.com',
-            linkGithub: 'https://www.google.com',
+            video: 'img/projetos/video-chat.mp4',
+            titulo: 'Chat Simples',
+            linkProjeto: 'https://github.com/mateus073?tab=repositories',
+            linkGithub: 'https://github.com/mateus073?tab=repositories',
             texto: {
                 titulo: 'Sobre o Projeto',
-                objetivo: "Desenvolver um projeto mais completo utilizando programação funcional, com o intuito de consolidar meus conhecimentos em JavaScript e, ao mesmo tempo, auxiliar nos meus estudos de inglês.",
-                escopo: "Aplicação interativa para aprender e praticar inglês, com duas modalidades principais: completar frases e montar frases, organizadas por temas. O projeto também inclui sistema de pontuação, histórico de desempenho, e artigos de apoio para estudo.",
-                tecnologias: ['HTML', 'CSS', 'JavaScript'],
+                objetivo: "Praticar e consolidar o uso de Context API e useReducer no gerenciamento de estado em aplicações React.",
+                escopo: "Aplicação de chat que permite envio e exibição de mensagens, com gerenciamento global de estado utilizando Context e reducer para controlar conversas e interações.",
+                tecnologias: ['react', 'tailwind', 'typescript'],
             },
         }
     },
@@ -232,41 +232,49 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: 'img/loading.jpg',
+            imagem: 'img/projetos/print-quizReact.png',
             id: 10,
-            titulo: 'Em Breve',
+            titulo: 'Quiz React',
             status: false,
             tecLogo: [
-                'img/tec-logo-blue/001-html.png',
-                'img/tec-logo-blue/002-css-3.png',
-                'img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/react-icone-azul.png',
+                'img/tec-logo-blue/tw-icone-azul.png',
+                'img/tec-logo-blue/ts-icone-azul.png',
             ],
         },
         dataModal: {
-            video: 'img/projetos/video-teste.mp4',
-            titulo: 'Em Breve',
-            linkProjeto: 'https://www.google.com',
-            linkGithub: 'https://www.google.com',
-            objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            tecnologias: ['HTML', 'CSS', 'JavaScript'],
-            titulo: 'Em Breve',
-            status: false,
-            tecLogo: [
-                'img/tec-logo-blue/001-html.png',
-                'img/tec-logo-blue/002-css-3.png',
-                'img/tec-logo-blue/003-script-java.png'
-            ],
-        },
-        dataModal: {
-            video: 'img/projetos/video-teste.mp4',
-            titulo: 'Projeto 1',
-            linkProjeto: 'https://www.google.com',
-            linkGithub: 'https://www.google.com',
+            video: 'img/projetos/video-quizReact.mp4',
+            titulo: 'Quiz React',
+            linkProjeto: 'https://github.com/mateus073/quiz-react',
+            linkGithub: 'https://github.com/mateus073/quiz-react',
             texto: {
-                titulo: 'Sobre o Projeto1',
-                objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+                titulo: 'Sobre o Quiz React',
+                objetivo: "Desenvolver um dos meus primeiros projetos em React, com foco em praticar o uso de states e interação com o usuário.",
+                escopo: "Aplicação de quiz de perguntas e respostas, onde o usuário seleciona alternativas e recebe feedback com base nas escolhas, permitindo navegação entre questões e cálculo de pontuação.",  tecnologias: ['React', 'Tailwind CSS', 'TypeScript'],
+            },
+        },
+    },
+    {
+        dataPost: {
+            imagem: 'img/projetos/img-quizEnglish.png',
+            id: 12,
+            titulo: 'Quiz English',
+            status: false,
+            tecLogo: [
+                'img/tec-logo-blue/001-html.png',
+                'img/tec-logo-blue/002-css-3.png',
+                'img/tec-logo-blue/003-script-java.png'
+            ],
+        },
+        dataModal: {
+            video: 'img/projetos/video-quizEnglish.mp4',
+            titulo: 'Quiz English',
+            linkProjeto: 'https://mateus073.github.io/Quiz-english-versionFinal/',
+            linkGithub: 'https://github.com/mateus073/Quiz-english-versionFinal',
+            texto: {
+                titulo: 'Sobre o Quiz English',
+                objetivo: 'Oferecer uma forma prática e interativa de estudar inglês por meio de exercícios dinâmicos, reforçando o aprendizado de vocabulário e estrutura de frases.',
+                escopo: 'Aplicação web com duas modalidades principais de estudo (complete a frase e traduza a frase), sistema de pontuação, feedback visual/sonoro e armazenamento de histórico no localStorage.',
                 tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
@@ -274,35 +282,9 @@ export const dataProjetos = [
     },
     {
         dataPost: {
-            imagem: 'img/loading.jpg',
-            id: 12,
-            titulo: 'projeto destaque',
-            status: false,
-            tecLogo: [
-                'img/tec-logo-blue/001-html.png',
-                'img/tec-logo-blue/002-css-3.png',
-                'img/tec-logo-blue/003-script-java.png'
-            ],
-        },
-        dataModal: {
-            video: 'img/projetos/video-teste.mp4',
-            titulo: 'projeto destaque',
-            linkProjeto: 'https://www.google.com',
-            linkGithub: 'https://www.google.com',
-            texto: {
-                titulo: 'Sobre o Projeto1',
-                objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                tecnologias: ['React', 'tailwind', 'typescript'],
-            },
-        }
-
-    },
-    {
-        dataPost: {
-            imagem: 'img/loading.jpg',
+            imagem: 'img/projetos/img-bank.png',
             id: 13,
-            titulo: 'projeto destaque',
+            titulo: 'Banco Ficticio',
             status: false,
             tecLogo: [
                 'img/tec-logo-blue/001-html.png',
@@ -311,29 +293,29 @@ export const dataProjetos = [
             ],
         },
         dataModal: {
-            video: 'img/projetos/video-teste.mp4',
-            titulo: 'projeto destaque',
-            linkProjeto: 'https://www.google.com',
-            linkGithub: 'https://www.google.com',
+            video: 'img/projetos/video-banco.mp4',
+            titulo: 'Banco Ficticio',
+            linkProjeto: 'https://github.com/mateus073/Meu-Banco',
+            linkGithub: 'https://github.com/mateus073/Meu-Banco',
             texto: {
-                titulo: 'Sobre o Projeto1',
-                objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                tecnologias: ['React', 'tailwind', 'typescript'],
+                titulo: 'Banco Ficticio',
+                objetivo: 'Considero o Banco Digital o projeto mais complexo e desafiador que desenvolvi antes da minha transição para o React. Nele foram utilizados JavaScript puro, conceitos de Programação Orientada a Objetos e diversas operações matemáticas que simulam com precisão as operações de um banco real. O desenvolvimento exigiu a criação de algoritmos complexos para processar transações financeiras, calcular parcelas, gerenciar faturas e controlar limites de crédito, além do gerenciamento completo de estado através do Local Storage, tudo isso sem o auxílio de frameworks ou bibliotecas externas. Este projeto consolidou minha capacidade de resolver problemas complexos aplicando lógica de programação avançada.',
+                escopo: 'A aplicação simula um banco digital completo com sistema de autenticação (cadastro, login e recuperação de senha), transações financeiras (depósitos e transferências), gestão de cartão de crédito com parcelamento automático, investimentos em ações e títulos, e pagamento de faturas. Inclui dashboard personalizável com indicadores financeiros, cálculo de variação percentual mensal, extrato detalhado com histórico de operações e interface responsiva. Toda a persistência de dados é gerenciada via Local Storage, com implementação de lógica complexa para validação de saldos, controle de limites de crédito e processamento de transações.',
+                tecnologias: ['HTML', 'CSS', 'JavaScript'],
             },
         }
 
     },
     {
         dataPost: {
-            imagem: 'img/loading.jpg',
+            imagem: 'img/projetos/img-barber.png',
             id: 14,
             titulo: 'Barber',
             status: false,
             tecLogo: [
-                'img/tec-logo-blue/001-html.png',
-                'img/tec-logo-blue/002-css-3.png',
-                'img/tec-logo-blue/003-script-java.png'
+                'img/tec-logo-blue/react-icone-azul.png',
+                'img/tec-logo-blue/tw-icone-azul.png',
+                'img/tec-logo-blue/ts-icone-azul.png',
             ],
         },
         dataModal: {
@@ -347,29 +329,32 @@ export const dataProjetos = [
                 escopo: 'O projeto contempla uma interface completa onde o usuário pode selecionar serviços, visualizar dias e horários disponíveis, realizar o agendamento e enviar automaticamente a solicitação para o WhatsApp do barbeiro. Também inclui integração com API simulada para controle de disponibilidade e gerenciamento de estado global da aplicação.',
                 tecnologias: ['React', 'Tailwind CSS', 'TypeScript', 'Axios', 'JSON Server'],
             },
-    }
+        }
 
     },
-{
-    dataPost: {
-        imagem: 'img/loading.jpg',
+    {
+        dataPost: {
+            imagem: 'img/projetos/img-sucos.png',
             id: 15,
-                titulo: 'projeto destaque',
-                    status: false,
-                        tecLogo: [
-                            'img/tec-logo-blue/001-html.png',
-                            'img/tec-logo-blue/002-css-3.png',
-                            'img/tec-logo-blue/003-script-java.png'
-                        ],
+            titulo: 'Sucos do Careca',
+            status: false,
+            tecLogo: [
+                'img/tec-logo-blue/react-icone-azul.png',
+                'img/tec-logo-blue/tw-icone-azul.png',
+                'img/tec-logo-blue/ts-icone-azul.png',
+            ],
         },
-    dataModal: {
-        video: 'img/projetos/video-teste.mp4',
-            titulo: 'Projeto destaque',
-                linkProjeto: 'https://www.google.com',
-                    linkGithub: 'https://www.google.com',
-                        objetivo: 'objetivo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                            escopo: 'Scopo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                                tecnologias: ['HTML', 'CSS', 'JavaScript'],
+        dataModal: {
+            video: 'img/projetos/video-sucosCareca.mp4',
+            titulo: 'Sucos do Careca',
+            linkProjeto: 'https://github.com/mateus073/sucos_do_careca',
+            linkGithub: 'https://github.com/mateus073/sucos_do_careca',
+            texto: {
+                titulo: 'Sobre o Sucos do Careca',
+                objetivo: 'Criar uma aplicação web para uma startup local de sucos artesanais, com foco em facilitar a visualização dos produtos e agilizar o processo de pedidos pelos clientes.',
+                escopo: 'Desenvolvimento de um site responsivo com listagem de produtos, página de detalhes, carrinho de compras e fluxo de finalização de pedido. A aplicação permite ao usuário montar seu pedido e enviá-lo de forma simples, integrando com o contato via WhatsApp para confirmação, entrega e pagamento.',
+                tecnologias: ['React', 'Tailwind CSS', 'TypeScript'],
             },
-}
-    ]
+        },
+    }
+]
