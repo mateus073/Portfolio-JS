@@ -39,8 +39,11 @@
 }
 
 
+
 /* foto corpo todo */
 .fotoG {
+    max-width: 400px;
+    max-height: 500px;
     margin: auto 10px;
     border-radius: 10px;
 }
