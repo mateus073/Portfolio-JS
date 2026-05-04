@@ -68,9 +68,10 @@ function moveButton() {
 
 
 
-const audioWins = new Audio('../audio/audio-vitoria.mpeg');
 
 btnYes.addEventListener('click', () => {
+
+    const audioWins = new Audio('audio/wins-audio.mpeg');
     audioWins.currentTime = 0;
     audioWins.play();
 
