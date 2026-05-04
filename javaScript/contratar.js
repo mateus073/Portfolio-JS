@@ -71,7 +71,7 @@ function moveButton() {
 
 btnYes.addEventListener('click', () => {
 
-    const audioWins = new Audio('audio/wins-audio.mpeg');
+    const audioWins = new Audio('./audio/wins-audio.mpeg');
     audioWins.currentTime = 0;
     audioWins.play();
 
